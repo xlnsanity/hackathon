@@ -1,184 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Farms to Families - Login</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Dancing+Script:700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Include your full CSS here or keep styles.css linked */
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Farms to Families - Login</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Dancing+Script:700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-image"></div>
-  
-  <!-- LOGIN -->
-  <div class="login-container" id="login-container">
+<div class="bg-image"></div>
+
+<!-- LOGIN -->
+<div class="login-container" id="login-container">
     <div class="login-glass">
-      <h1>
+    <h1>
         <span class="welcome">Welcome to</span><br>
         <span class="brand">Farms to Families</span>
-      </h1>
-      <p class="subtitle">Make Easy Farming with fast delivery at your door.</p>
-      <form id="login-form">
+    </h1>
+    <p class="subtitle">Make Easy Farming with fast delivery at your door.</p>
+    <form id="login-form">
         <input type="text" class="input" placeholder="Username" autocomplete="username" required>
         <input type="password" class="input" placeholder="Password" autocomplete="current-password" required>
         <div class="misc">
-          <span class="no-account">Don't have an account?</span>
-          <a href="#" class="forgot">FORGOT PASSWORD</a>
+        <span class="no-account">Don't have an account?</span>
+        <a href="#" class="forgot">FORGOT PASSWORD</a>
         </div>
         <button type="submit" class="login-btn">Login</button>
-      </form>
+    </form>
     </div>
-  </div>
+</div>
 
-  <!-- CHOOSE -->
-  <div class="choose-container" id="choose-container" style="display:none;">
+<!-- CHOOSE -->
+<div class="choose-container" id="choose-container" style="display:none;">
     <div class="choose-bg">
-      <div class="choose-select">Select one</div>
-      <div class="choose-cards">
+    <div class="choose-select">Select one</div>
+    <div class="choose-cards">
         <div class="choose-card" onclick="chooseUser('family')">
-          <div class="choose-img" style="background-image:url('images/families.png');"></div>
-          <div class="choose-label">Families</div>
+        <div class="choose-img" style="background-image:url('images/families.png');"></div>
+        <div class="choose-label">Families</div>
         </div>
         <div class="choose-card" onclick="chooseUser('farmer')">
-          <div class="choose-img" style="background-image:url('images/farmers.png');"></div>
-          <div class="choose-label">Farmers</div>
+        <div class="choose-img" style="background-image:url('images/farmers.png');"></div>
+        <div class="choose-label">Farmers</div>
         </div>
-      </div>
     </div>
-  </div>
+    </div>
+</div>
 
-  <!-- HOME -->
-  <main class="home-container" id="home-families" style="display:none;">
+<!-- FAMILIES HOME -->
+<main class="home-container" id="home-families" style="display:none;">
     <header class="brand-home-bar">
-      <span class="home-brand">Farms to Families</span>
+    <span class="home-brand">Farms to Families</span>
     </header>
     <nav class="top-navbar">
-      <a class="nav-link active" href="#" id="home-nav">Home</a>
-      <a class="nav-link" href="#" id="cart-nav">Cart</a>
-      <a class="nav-link" href="#">Favourite</a>
-      <a class="nav-link" href="#" id="profile-nav">Profile</a>
+    <a class="nav-link active" href="#" id="home-nav">Home</a>
+    <a class="nav-link" href="#" id="cart-nav">Cart</a>
+    <a class="nav-link" href="#">Favourite</a>
+    <a class="nav-link" href="#" id="profile-nav">Profile</a>
     </nav>
     
     <section class="families-home-card" id="families-home-content">
-      <div class="location-bar">
+    <div class="location-bar">
         <span class="location-emoji">🥕</span>
         <span class="location-link">Bowrampet, Hyderabad</span>
-      </div>
-      
-      <div class="search-row">
+    </div>
+    
+    <div class="search-row">
         <input type="text" class="search-bar" placeholder="Search Store" />
-      </div>
-      
-      <div class="banner-offer">
+    </div>
+    
+    <div class="banner-offer">
         <span class="offer-sign">Special OFFER!</span>
         <span class="offer-text">50% Off</span>
         <span style="flex:1"></span>
         <span style="font-size:0.95em;">T&amp;C Apply</span>
-      </div>
-      
-      <!-- Exclusive Offer -->
-      <section>
+    </div>
+    
+    <!-- Exclusive Offer -->
+    <section>
         <h3>Exclusive Offer <span class="see-all">See all</span></h3>
         <div class="product-list">
-          <div class="product-card">
+        <div class="product-card">
             <img src="images/bananas.png" alt="bananas" />
             <div class="product-title">Organic Bananas <span class="small-g">7pcs</span></div>
             <div class="product-price">&#8377; 60 <button class="product-add">+</button></div>
-          </div>
-          <div class="product-card">
+        </div>
+        <div class="product-card">
             <img src="images/apple.png" alt="apple" />
             <div class="product-title">Red Apple <span class="small-g">1kg</span></div>
             <div class="product-price">&#8377; 600 <button class="product-add">+</button></div>
-          </div>
         </div>
-      </section>
-      
-      <!-- Best Selling -->
-      <section>
+        </div>
+    </section>
+    
+    <!-- Best Selling -->
+    <section>
         <h3>Best Selling <span class="see-all">See all</span></h3>
         <div class="product-list">
-          <div class="product-card">
+        <div class="product-card">
             <img src="images/capsicum.png" alt="capsicum" />
             <div class="product-title">Red Capsicum <span class="small-g">1kg</span></div>
             <div class="product-price">&#8377; 40 <button class="product-add">+</button></div>
-          </div>
-          <div class="product-card">
+        </div>
+        <div class="product-card">
             <img src="images/ginger.png" alt="ginger" />
             <div class="product-title">Ginger <span class="small-g">500g</span></div>
             <div class="product-price">&#8377; 60 <button class="product-add">+</button></div>
-          </div>
-          <div class="product-card">
+        </div>
+        <div class="product-card">
             <img src="images/broccoli.png" alt="broccoli" />
             <div class="product-title">Broccoli <span class="small-g">1kg</span></div>
             <div class="product-price">&#8377; 600 <button class="product-add">+</button></div>
-          </div>
         </div>
-      </section>
-      
-      <!-- Groceries -->
-      <section>
+        </div>
+    </section>
+    
+    <!-- Groceries -->
+    <section>
         <h3>Groceries <span class="see-all">See all</span></h3>
         <div class="groceries-grid">
-          <div class="groceries-card placeholder-card">
+        <div class="groceries-card placeholder-card">
             <div class="groceries-img" style="background-image:url('images/grains.jpg');"></div>
             <div class="groceries-label">Grains</div>
-          </div>
-          <div class="groceries-card placeholder-card">
+        </div>
+        <div class="groceries-card placeholder-card">
             <div class="groceries-img" style="background-image:url('images/pulses.webp');"></div>
             <div class="groceries-label">Pulses</div>
-          </div>
-          <div class="groceries-card placeholder-card">
+        </div>
+        <div class="groceries-card placeholder-card">
             <div class="groceries-img" style="background-image:url('images/rice.png');"></div>
             <div class="groceries-label">Rice</div>
-          </div>
-          <div class="groceries-card placeholder-card">
+        </div>
+        <div class="groceries-card placeholder-card">
             <div class="groceries-img" style="background-image:url('images/oil.jpeg');"></div>
             <div class="groceries-label">Oils</div>
-          </div>
         </div>
-      </section>
-      
-      <footer style="margin-top:32px; text-align:center; font-size:0.96rem; color:#6e826e;">© 2025 Farms to Families</footer>
+        </div>
+    </section>
+    
+    <footer style="margin-top:32px; text-align:center; font-size:0.96rem; color:#6e826e;">© 2025 Farms to Families</footer>
     </section>
 
     <!-- CHECKOUT PAGE -->
     <section class="checkout-card" id="checkout-section" style="display:none;">
-      <button class="back-home" id="checkout-back-btn">&#8592;</button>
-      <div class="checkout-title">Checkout</div>
-      <div class="checkout-item-row">
+    <button class="back-home" id="checkout-back-btn">&#8592;</button>
+    <div class="checkout-title">Checkout</div>
+    <div class="checkout-item-row">
         <img src="images/pomegranate.jpg" alt="pomegranate" class="checkout-thumb">
         <div class="checkout-item-info">
-          <div class="prod">Pomegranate</div>
-          <div class="checkout-price">&#8377;100</div>
-          <div><button class="qty-btn">-</button> <span>1</span> <button class="qty-btn">+</button></div>
-          <a class="checkout-link" href="#">Add more items</a>
+        <div class="prod">Pomegranate</div>
+        <div class="checkout-price">&#8377;100</div>
+        <div><button class="qty-btn">-</button> <span>1</span> <button class="qty-btn">+</button></div>
+        <a class="checkout-link" href="#">Add more items</a>
         </div>
-      </div>
-      <button class="coupon-btn">Apply Coupon</button>
-      <div class="checkout-invoice">
+    </div>
+    <button class="coupon-btn">Apply Coupon</button>
+    <div class="checkout-invoice">
         <div><span>Original Price</span><span>&#8377;100</span></div>
         <div><span>Delivery</span><span style="color:#f3756c;">+40</span></div>
         <div><span>GST</span><span style="color:#f3756c;">+18</span></div>
         <div><span>Discount</span><span style="color:#43ba7f;">-20</span></div>
         <div style="font-weight:700;"><span>Total</span><span style="color:#28a340;">&#8377;138</span></div>
-      </div>
-      <div class="checkout-shipping">
+    </div>
+    <div class="checkout-shipping">
         <div style="font-weight:700;">Yaswanth Prasad <span class="ship-badge">Home &#9662;</span></div>
         <div class="checkout-addr">Nizampet, Hyderabad</div>
         <div class="checkout-ph">+91 12345 67890</div>
         <button class="checkout-link">Add Delivery Instructions</button>
-      </div>
-      <button class="checkout-final-btn">Proceed to Checkout</button>
+    </div>
+    <button class="checkout-final-btn">Proceed to Checkout</button>
     </section>
 
     <!-- PROFILE SECTION -->
     <section class="profile-card" id="profile-section" style="display:none;">
-      <button class="back-home" id="profile-back-btn">&#8592;</button>
-      <div class="profile-title">Profile</div>
-      <form class="profile-form">
+    <button class="back-home" id="profile-back-btn">&#8592;</button>
+    <div class="profile-title">Profile</div>
+    <form class="profile-form">
         <label for="profile-name">Name</label>
         <input type="text" id="profile-name" placeholder="Yaswanth Prasad">
 
@@ -193,17 +190,324 @@
 
         <label for="profile-payment">Payment Method</label>
         <select id="profile-payment">
-          <option value="card">Credit/Debit Card</option>
-          <option value="netbanking">Net Banking</option>
-          <option value="upi">UPI</option>
-          <option value="cash">Cash on Delivery</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="netbanking">Net Banking</option>
+        <option value="upi">UPI</option>
+        <option value="cash">Cash on Delivery</option>
         </select>
 
         <button type="submit" class="profile-save-btn">Save Changes</button>
-      </form>
+    </form>
     </section>
-  </main>
+</main>
 
-  <script src="app.js"></script>
+<!-- FARMERS HOME -->
+<main class="home-container" id="home-farmers" style="display:none;">
+    <header class="brand-home-bar">
+    <span class="home-brand">Farms to Families - Farmer</span>
+    </header>
+    <nav class="top-navbar">
+    <a class="nav-link active" href="#" id="farmer-home-nav">Home</a>
+    <a class="nav-link" href="#" id="farmer-inventory-nav">Inventory</a>
+    <a class="nav-link" href="#" id="farmer-orders-nav">Orders</a>
+    <a class="nav-link" href="#" id="farmer-analytics-nav">Analytics</a>
+    <a class="nav-link" href="#" id="farmer-profile-nav">Profile</a>
+    </nav>
+    
+    <!-- FARMER HOME CONTENT -->
+    <section class="farmer-home-card" id="farmer-home-content">
+    <div class="location-bar">
+        <span class="location-emoji">🚜</span>
+        <span class="location-link">My Farm - Bowrampet, Hyderabad</span>
+    </div>
+    
+    <div class="search-row">
+        <input type="text" class="search-bar" placeholder="Search Products" />
+    </div>
+    
+    <div class="banner-offer farmer-banner">
+        <span class="offer-sign">Farm Stats</span>
+        <span class="offer-text">Active Products: 15</span>
+        <span style="flex:1"></span>
+        <span style="font-size:0.95em;">Today's Revenue: ₹2,500</span>
+    </div>
+
+    <!-- Farm Statistics -->
+    <section>
+        <h3>Farm Overview <span class="see-all">View Details</span></h3>
+        <div class="farm-stats">
+        <div class="stat-card">
+            <div class="stat-icon">📊</div>
+            <div class="stat-title">Total Orders</div>
+            <div class="stat-value">142</div>
+            <div class="stat-change">+12% from last month</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">💰</div>
+            <div class="stat-title">Monthly Revenue</div>
+            <div class="stat-value">₹45,600</div>
+            <div class="stat-change">+18% from last month</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">📦</div>
+            <div class="stat-title">Products Listed</div>
+            <div class="stat-value">25</div>
+            <div class="stat-change">+3 new this week</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">⭐</div>
+            <div class="stat-title">Customer Rating</div>
+            <div class="stat-value">4.8/5</div>
+            <div class="stat-change">+0.2 from last month</div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- My Products -->
+    <section>
+        <h3>My Products <span class="see-all">Manage All</span></h3>
+        <div class="product-list">
+        <div class="product-card farmer-card" onclick="editProduct('bananas')">
+            <img src="images/bananas.png" alt="bananas" />
+            <div class="product-title">Organic Bananas <span class="small-g">Stock: 50kg</span></div>
+            <div class="product-price">₹60/kg <button class="product-edit">✏️</button></div>
+        </div>
+        <div class="product-card farmer-card" onclick="editProduct('apple')">
+            <img src="images/apple.png" alt="apple" />
+            <div class="product-title">Red Apple <span class="small-g">Stock: 30kg</span></div>
+            <div class="product-price">₹600/kg <button class="product-edit">✏️</button></div>
+        </div>
+        <div class="product-card farmer-card" onclick="editProduct('capsicum')">
+            <img src="images/capsicum.png" alt="capsicum" />
+            <div class="product-title">Red Capsicum <span class="small-g">Stock: 25kg</span></div>
+            <div class="product-price">₹40/kg <button class="product-edit">✏️</button></div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Recent Orders -->
+    <section>
+        <h3>Recent Orders <span class="see-all">View All</span></h3>
+        <div class="orders-list">
+        <div class="order-card" onclick="viewOrder('ORD001')">
+            <div class="order-info">
+            <div class="order-id">#ORD001</div>
+            <div class="order-customer">Rajesh Kumar</div>
+            <div class="order-items">3 items • ₹450</div>
+            </div>
+            <div class="order-status pending">Pending</div>
+        </div>
+        <div class="order-card" onclick="viewOrder('ORD002')">
+            <div class="order-info">
+            <div class="order-id">#ORD002</div>
+            <div class="order-customer">Priya Sharma</div>
+            <div class="order-items">2 items • ₹320</div>
+            </div>
+            <div class="order-status shipped">Shipped</div>
+        </div>
+        <div class="order-card" onclick="viewOrder('ORD003')">
+            <div class="order-info">
+            <div class="order-id">#ORD003</div>
+            <div class="order-customer">Amit Patel</div>
+            <div class="order-items">5 items • ₹780</div>
+            </div>
+            <div class="order-status delivered">Delivered</div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Quick Actions -->
+    <section>
+        <h3>Quick Actions</h3>
+        <div class="quick-actions">
+        <button class="action-btn" onclick="addNewProduct()">
+            <span class="action-icon">➕</span>
+            <span>Add Product</span>
+        </button>
+        <button class="action-btn" onclick="updateInventory()">
+            <span class="action-icon">📦</span>
+            <span>Update Stock</span>
+        </button>
+        <button class="action-btn" onclick="viewAnalytics()">
+            <span class="action-icon">📊</span>
+            <span>View Reports</span>
+        </button>
+        <button class="action-btn" onclick="manageOrders()">
+            <span class="action-icon">📋</span>
+            <span>Manage Orders</span>
+        </button>
+        </div>
+    </section>
+    
+    <footer style="margin-top:32px; text-align:center; font-size:0.96rem; color:#6e826e;">© 2025 Farms to Families - Farmer Portal</footer>
+    </section>
+
+    <!-- FARMER INVENTORY SECTION -->
+    <section class="farmer-inventory-card" id="farmer-inventory-content" style="display:none;">
+    <button class="back-home" id="inventory-back-btn">←</button>
+    <div class="section-title">Inventory Management</div>
+    
+    <div class="inventory-controls">
+        <button class="control-btn primary" onclick="addNewProduct()">Add New Product</button>
+        <button class="control-btn secondary" onclick="bulkUpdate()">Bulk Update</button>
+        <input type="text" class="search-bar" placeholder="Search inventory...">
+    </div>
+
+    <div class="inventory-grid">
+        <div class="inventory-item">
+        <img src="images/bananas.png" alt="bananas">
+        <div class="inventory-details">
+            <h4>Organic Bananas</h4>
+            <p>Stock: 50kg | Price: ₹60/kg</p>
+            <p>Status: <span class="status-active">Active</span></p>
+        </div>
+        <div class="inventory-actions">
+            <button class="btn-edit" onclick="editProduct('bananas')">Edit</button>
+            <button class="btn-stock" onclick="updateStock('bananas')">Update Stock</button>
+        </div>
+        </div>
+        
+        <div class="inventory-item">
+        <img src="images/apple.png" alt="apple">
+        <div class="inventory-details">
+            <h4>Red Apple</h4>
+            <p>Stock: 30kg | Price: ₹600/kg</p>
+            <p>Status: <span class="status-low">Low Stock</span></p>
+        </div>
+        <div class="inventory-actions">
+            <button class="btn-edit" onclick="editProduct('apple')">Edit</button>
+            <button class="btn-stock" onclick="updateStock('apple')">Update Stock</button>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- FARMER ORDERS SECTION -->
+    <section class="farmer-orders-card" id="farmer-orders-content" style="display:none;">
+    <button class="back-home" id="orders-back-btn">←</button>
+    <div class="section-title">Order Management</div>
+    
+    <div class="orders-filter">
+        <button class="filter-btn active" onclick="filterOrders('all')">All Orders</button>
+        <button class="filter-btn" onclick="filterOrders('pending')">Pending</button>
+        <button class="filter-btn" onclick="filterOrders('shipped')">Shipped</button>
+        <button class="filter-btn" onclick="filterOrders('delivered')">Delivered</button>
+    </div>
+
+    <div class="detailed-orders">
+        <div class="detailed-order-card">
+        <div class="order-header">
+            <span class="order-number">#ORD001</span>
+            <span class="order-date">Today, 2:30 PM</span>
+            <span class="order-status pending">Pending</span>
+        </div>
+        <div class="order-customer-info">
+            <strong>Rajesh Kumar</strong><br>
+            📱 +91 98765 43210<br>
+            📍 Nizampet, Hyderabad
+        </div>
+        <div class="order-items-list">
+            <div class="order-item">Bananas - 2kg × ₹60 = ₹120</div>
+            <div class="order-item">Capsicum - 1kg × ₹40 = ₹40</div>
+            <div class="order-total">Total: ₹450 (including delivery)</div>
+        </div>
+        <div class="order-actions-btn">
+            <button class="btn-accept" onclick="acceptOrder('ORD001')">Accept Order</button>
+            <button class="btn-reject" onclick="rejectOrder('ORD001')">Decline</button>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- FARMER ANALYTICS SECTION -->
+    <section class="farmer-analytics-card" id="farmer-analytics-content" style="display:none;">
+    <button class="back-home" id="analytics-back-btn">←</button>
+    <div class="section-title">Analytics & Reports</div>
+    
+    <div class="analytics-period">
+        <button class="period-btn active" onclick="setPeriod('week')">This Week</button>
+        <button class="period-btn" onclick="setPeriod('month')">This Month</button>
+        <button class="period-btn" onclick="setPeriod('year')">This Year</button>
+    </div>
+
+    <div class="analytics-grid">
+        <div class="analytics-card">
+        <h4>Revenue Trend</h4>
+        <div class="chart-placeholder">
+            📈 Revenue: ₹45,600 (+18%)
+        </div>
+        </div>
+        
+        <div class="analytics-card">
+        <h4>Top Products</h4>
+        <div class="top-products">
+            <div class="top-product">1. Bananas - ₹12,000</div>
+            <div class="top-product">2. Apples - ₹9,800</div>
+            <div class="top-product">3. Capsicum - ₹7,500</div>
+        </div>
+        </div>
+        
+        <div class="analytics-card">
+        <h4>Customer Satisfaction</h4>
+        <div class="satisfaction-score">
+            <div class="score">4.8/5</div>
+            <div class="reviews">Based on 127 reviews</div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- FARMER PROFILE SECTION -->
+    <section class="farmer-profile-card" id="farmer-profile-content" style="display:none;">
+    <button class="back-home" id="farmer-profile-back-btn">←</button>
+    <div class="section-title">Farmer Profile</div>
+    
+    <form class="farmer-profile-form">
+        <div class="form-section">
+        <h4>Personal Information</h4>
+        <label for="farmer-name">Farm Name</label>
+        <input type="text" id="farmer-name" placeholder="Green Valley Farm">
+        
+        <label for="farmer-owner">Owner Name</label>
+        <input type="text" id="farmer-owner" placeholder="Ravi Kumar">
+        
+        <label for="farmer-email">Email</label>
+        <input type="email" id="farmer-email" placeholder="ravi@greenvalley.com">
+        
+        <label for="farmer-phone">Phone</label>
+        <input type="tel" id="farmer-phone" placeholder="+91 98765 43210">
+        </div>
+        
+        <div class="form-section">
+        <h4>Farm Details</h4>
+        <label for="farm-address">Farm Address</label>
+        <textarea id="farm-address" rows="3" placeholder="Village Bowrampet, Hyderabad"></textarea>
+        
+        <label for="farm-size">Farm Size</label>
+        <input type="text" id="farm-size" placeholder="5 acres">
+        
+        <label for="farm-type">Farm Type</label>
+        <select id="farm-type">
+            <option value="organic">Organic</option>
+            <option value="conventional">Conventional</option>
+            <option value="mixed">Mixed</option>
+        </select>
+        </div>
+        
+        <div class="form-section">
+        <h4>Banking Details</h4>
+        <label for="bank-account">Account Number</label>
+        <input type="text" id="bank-account" placeholder="XXXX-XXXX-XXXX-1234">
+        
+        <label for="bank-ifsc">IFSC Code</label>
+        <input type="text" id="bank-ifsc" placeholder="SBIN0001234">
+        </div>
+        
+        <button type="submit" class="profile-save-btn">Save Profile</button>
+    </form>
+    </section>
+</main>
+
+<script src="app.js"></script>
 </body>
 </html>
