@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farms to Families - Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Dancing+Script:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-image"></div>
+
+  <!-- LOGIN SECTION -->
+  <div class="login-container" id="login-container">
+    <div class="login-glass">
+      <h1>
+        <span class="welcome">Welcome to</span><br>
+        <span class="brand">Farms to Families</span>
+      </h1>
+      <p class="subtitle">Make Easy Farming with fast delivery at your door.</p>
+      <form id="login-form">
+        <input type="text" class="input" placeholder="Username" autocomplete="username">
+        <input type="password" class="input" placeholder="Password" autocomplete="current-password">
+        <div class="misc">
+          <span class="no-account">Don't have an account?</span>
+          <a href="#" class="forgot">FORGOT PASSWORD</a>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- CHOOSE PAGE -->
+  <div class="choose-container" id="choose-container" style="display:none;">
+    <div class="choose-bg">
+      <div class="choose-select">Select one</div>
+      <div class="choose-cards">
+        <div class="choose-card" onclick="chooseUser('family')">
+          <div class="choose-img" style="background-image:url('images/families.png');"></div>
+          <div class="choose-label">Families</div>
+        </div>
+        <div class="choose-card" onclick="chooseUser('farmer')">
+          <div class="choose-img" style="background-image:url('images/farmers.png');"></div>
+          <div class="choose-label">Farmers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOME SCREEN for Families -->
+  <main class="home-container" id="home-families" style="display:none;">
+    <header class="brand-home-bar">
+      <span class="home-brand">Farms to Families</span>
+    </header>
+    <nav class="top-navbar">
+      <a class="nav-link active" href="#" id="home-nav">Home</a>
+      <a class="nav-link" href="#">AI Identifier</a>
+      <a class="nav-link" href="#" id="cart-nav">Cart</a>
+      <a class="nav-link" href="#">Favourite</a>
+      <a class="nav-link" href="#">Profile</a>
+    </nav>
+    <section class="families-home-card" id="families-home-content">
+      <div class="location-bar">
+        <span class="location-emoji">🥕</span>
+        <span class="location-link">Bowrampet, Hyderabad</span>
+      </div>
+      <div class="search-row">
+        <input type="text" class="search-bar" placeholder="Search Store" />
+      </div>
+      <div class="banner-offer">
+        <span class="offer-sign">Special OFFER!</span>
+        <span class="offer-text">50% Off</span>
+        <span style="flex:1"></span>
+        <span style="font-size:0.95em;">T&amp;C Apply</span>
+      </div>
+      <section>
+        <h3>Exclusive Offer <span class="see-all">See all</span></h3>
+        <div class="product-list">
+          <div class="product-card">
+            <img src="images/bananas.png" alt="bananas">
+            <div class="product-title">Organic Bananas <span class="small-g">7pcs</span></div>
+            <div class="product-price">&#8377; 60 <button class="product-add">+</button></div>
+          </div>
+          <div class="product-card">
+            <img src="images/apple.png" alt="apple">
+            <div class="product-title">Red Apple <span class="small-g">1kg</span></div>
+            <div class="product-price">&#8377; 600 <button class="product-add">+</button></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Best Selling <span class="see-all">See all</span></h3>
+        <div class="product-list">
+          <div class="product-card">
+            <img src="images/capsicum.png" alt="capsicum">
+            <div class="product-title">Red Capsicum <span class="small-g">1kg</span></div>
+            <div class="product-price">&#8377; 40 <button class="product-add">+</button></div>
+          </div>
+          <div class="product-card">
+            <img src="images/ginger.png" alt="ginger">
+            <div class="product-title">Ginger <span class="small-g">500g</span></div>
+            <div class="product-price">&#8377; 60 <button class="product-add">+</button></div>
+          </div>
+          <div class="product-card">
+            <img src="images/broccoli.png" alt="broccoli">
+            <div class="product-title">Broccoli <span class="small-g">1kg</span></div>
+            <div class="product-price">&#8377; 600 <button class="product-add">+</button></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Groceries <span class="see-all">See all</span></h3>
+        <div class="groceries-grid">
+          <div class="groceries-card placeholder-card">
+            <div class="groceries-img" style="background-image:url('images/grains.png');"></div>
+            <div class="groceries-label">Grains</div>
+          </div>
+          <div class="groceries-card placeholder-card">
+            <div class="groceries-img" style="background-image:url('images/pulses.png');"></div>
+            <div class="groceries-label">Pulses</div>
+          </div>
+          <div class="groceries-card placeholder-card">
+            <div class="groceries-img" style="background-image:url('images/rice.png');"></div>
+            <div class="groceries-label">Rice</div>
+          </div>
+          <div class="groceries-card placeholder-card">
+            <div class="groceries-img" style="background-image:url('images/oil.png');"></div>
+            <div class="groceries-label">Oils</div>
+          </div>
+        </div>
+      </section>
+      <!-- You can add more sections/products for greater scroll -->
+      <footer style="margin-top:32px; text-align:center; font-size:0.96rem; color:#6e826e;">© 2025 Farms to Families</footer>
+    </section>
+    <!-- CHECKOUT PAGE (hidden initially) -->
+    <section class="checkout-card" id="checkout-section" style="display:none;">
+      <button class="back-home" onclick="toggleCheckout(false)">&#8592;</button>
+      <div class="checkout-title">Checkout</div>
+      <div class="checkout-item-row">
+        <img src="images/pomegranate.png" alt="pomegranate" class="checkout-thumb">
+        <div class="checkout-item-info">
+          <div class="prod">Pomegranate</div>
+          <div class="checkout-price">&#8377;100</div>
+          <div><button class="qty-btn">-</button> <span>1</span> <button class="qty-btn">+</button></div>
+          <a class="checkout-link" href="#">Add more items</a>
+        </div>
+      </div>
+      <button class="coupon-btn">Apply Coupon</button>
+      <div class="checkout-invoice">
+        <div><span>Original Price</span><span>&#8377;100</span></div>
+        <div><span>Delivery</span><span style="color:#f3756c;">+40</span></div>
+        <div><span>GST</span><span style="color:#f3756c;">+18</span></div>
+        <div><span>Discount</span><span style="color:#43ba7f;">-20</span></div>
+        <div style="font-weight:700;"><span>Total</span><span style="color:#28a340;">&#8377;138</span></div>
+      </div>
+      <div class="checkout-shipping">
+        <div style="font-weight:700;">Yaswanth Prasad <span class="ship-badge">Home &#9662;</span></div>
+        <div class="checkout-addr">Nizampet, Hyderabad</div>
+        <div class="checkout-ph">+91 12345 67890</div>
+        <button class="checkout-link">Add Delivery Instructions</button>
+      </div>
+      <button class="checkout-final-btn">Proceed to Checkout</button>
+    </section>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById('login-form').onsubmit = function (e) {
+        e.preventDefault();
+        document.getElementById('login-container').style.display = "none";
+        document.getElementById('choose-container').style.display = "flex";
+      };
+      // Cart nav click
+      document.getElementById('cart-nav').onclick = function (e) {
+        e.preventDefault();
+        toggleCheckout(true);
+      };
+      document.getElementById('home-nav').onclick = function (e) {
+        e.preventDefault();
+        toggleCheckout(false);
+      };
+    });
+    function chooseUser(role) {
+      document.getElementById('choose-container').style.display = "none";
+      if (role === 'family') {
+        document.getElementById('home-families').style.display = "block";
+        window.scrollTo(0, 0);
+      }
+    }
+    function toggleCheckout(show) {
+      document.getElementById('checkout-section').style.display = show ? 'block' : 'none';
+      document.getElementById('families-home-content').style.display = show ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
