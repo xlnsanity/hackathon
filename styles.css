@@ -555,3 +555,110 @@ h3 {
   .search-bar { width: 94vw; }
   .brand-home-bar { padding-left:6vw; }
 }
+.brand-home-bar {
+  max-width: 1150px;
+  margin: 36px auto 0 auto;
+  font-size: 2.4rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  color: #2f7430;
+  letter-spacing: 1.2px;
+  text-align: left;
+  padding: 20px 52px;
+  background: #fff;
+  border-radius: 22px 22px 0 0;
+  box-shadow: 0 7px 32px rgba(44,60,54,0.08);
+  border-bottom: 3px solid #2f7430;
+  position: relative;
+  z-index: 15;
+}
+
+.profile-card {
+  max-width: 1150px;
+  margin: 32px auto 60px auto;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 7px 32px rgba(25,87,22,0.12);
+  padding: 36px 52px 45px 52px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #1f3d1a;
+  position: relative;
+}
+
+.profile-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 26px;
+  color: #317a2b;
+}
+
+.profile-form label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="tel"],
+.profile-form textarea,
+.profile-form select {
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: 1.6px solid #8ac58a;
+  font-size: 1.12rem;
+  color: #225922;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f7fff7;
+  transition: border-color 0.3s;
+}
+
+.profile-form input[type="text"]:focus,
+.profile-form input[type="email"]:focus,
+.profile-form input[type="tel"]:focus,
+.profile-form textarea:focus,
+.profile-form select:focus {
+  outline: none;
+  border-color: #3a9d3e;
+  background: #e8ffe9;
+}
+
+.profile-save-btn {
+  margin-top: 32px;
+  background: linear-gradient(90deg, #55b956, #237423);
+  color: #e5f7e5;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border: none;
+  border-radius: 40px;
+  padding: 16px 0;
+  cursor: pointer;
+  width: 100%;
+  letter-spacing: 1.1px;
+  transition: background 0.25s;
+}
+
+.profile-save-btn:hover {
+  background: linear-gradient(90deg, #237423, #55b956);
+}
+
+/* Back button for profile */
+.back-home {
+  background: none;
+  border: none;
+  font-size: 2.4rem;
+  color: #2f6f30;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 20;
+}
+.back-home:hover {
+  color: #125117;
+}
