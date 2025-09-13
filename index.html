@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Farms to Families - Login</title>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Dancing+Script:700&display=swap" rel="stylesheet">
+<title>Farms to Families - Modern Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,15 +13,15 @@
 <!-- LOGIN -->
 <div class="login-container" id="login-container">
     <div class="login-glass">
-    <h1>
-        <span class="welcome">Welcome to</span><br>
-        <span class="brand">Farms to Families</span>
-    </h1>
-    <p class="subtitle">Make Easy Farming with fast delivery at your door.</p>
-    <form id="login-form">
-        <input type="text" class="input" placeholder="Username" autocomplete="username" required>
-        <input type="password" class="input" placeholder="Password" autocomplete="current-password" required>
-        <div class="misc">
+        <h1>
+            <span class="welcome">Welcome to</span><br>
+            <span class="brand">Farms to Families</span>
+        </h1>
+        <p class="subtitle">Connect farmers directly with families for fresh, sustainable produce delivery.</p>
+        <form id="login-form">
+            <input type="text" class="input" placeholder="Username" autocomplete="username" required>
+            <input type="password" class="input" placeholder="Password" autocomplete="current-password" required>
+            <div class="misc">
         <span class="no-account">Don't have an account?</span>
         <a href="#" class="forgot">FORGOT PASSWORD</a>
         </div>
@@ -30,484 +30,1375 @@
     </div>
 </div>
 
+ 
+    <!-- FARMER PROFILE SECTION -->
+    <section class="farmer-profile-card" id="farmer-profile-content" style="display:none;">
+        <div class="section-header">
+            <button class="back-btn" id="farmer-profile-back-btn">←</button>
+            <div class="section-title">Farmer Profile</div>
+            <div class="header-actions">
+                <button class="edit-profile-btn">✏️ Edit</button>
+                <button class="settings-btn">⚙️ Settings</button>
+            </div>
+        </div>
+        
+        <div class="farmer-profile-header">
+            <div class="profile-cover">
+                <div class="cover-image"></div>
+                <button class="change-cover-btn">Change Cover</button>
+            </div>
+            <div class="profile-main">
+                <div class="profile-avatar-section">
+                    <div class="profile-avatar-large">
+                        <img src="https://via.placeholder.com/100x100/10b981/ffffff?text=RK" alt="Profile" class="avatar-img">
+                        <button class="change-photo-btn">📷</button>
+                    </div>
+                    <div class="profile-verification">
+                        <span class="verified-badge">✅ Verified Farmer</span>
+                        <span class="certification">🏆 Organic Certified</span>
+                    </div>
+                </div>
+                <div class="profile-info-section">
+                    <div class="profile-name">Ravi Kumar</div>
+                    <div class="farm-name">Green Valley Farm</div>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">4.8⭐</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">127</div>
+                            <div class="stat-label">Reviews</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">25</div>
+                            <div class="stat-label">Products</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3.2K</div>
+                            <div class="stat-label">Orders</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-content">
+            <div class="profile-section">
+                <h4>Personal Information</h4>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Full Name</label>
+                        <div class="info-value">Ravi Kumar</div>
+                    </div>
+                    <div class="info-item">
+                        <label>Email</label>
+                        <div class="info-value">ravi@greenvalley.com</div>
+                    </div>
+                    <div class="info-item">
+                        <label>Phone</label>
+                        <div class="info-value">+91 98765 43210</div>
+                    </div>
+                    <div class="info-item">
+                        <label>Date of Birth</label>
+                        <div class="info-value">March 15, 1985</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-section">
+                <h4>Farm Details</h4>
+                <div class="info-grid">
+                    <div class="info-item full-width">
+                        <label>Farm Address</label>
+                        <div class="info-value">Village Bowrampet, Medchal-Malkajgiri District, Telangana - 502032</div>
+                    </div>
+                    <div class="info-item">
+                        <label>Farm Size</label>
+                        <div class="info-value">5 acres</div>
+                    </div>
+                    <div class="info-item">
+                        <label>Farm Type</label>
+                        <div class="info-value">Organic</div>
+                    </div>
+                    <div class="info-item">
+                        <label>Established</label>
+                        <div class="info-value">2018</div>
+                    </div>
+                    <div class="info-item">
+                        <label>Certification</label>
+                        <div class="info-value">
+                            <span class="certification-badge">Organic India Certified</span>
+                            <span class="certification-badge">FSSAI Licensed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-section">
+                <h4>Specialties & Products</h4>
+                <div class="specialties-grid">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">🍅</div>
+                        <div class="specialty-name">Organic Tomatoes</div>
+                        <div class="specialty-desc">Premium quality vine-ripened tomatoes</div>
+                    </div>
+                    <div class="specialty-card">
+                        <div class="specialty-icon">🥬</div>
+                        <div class="specialty-name">Leafy Greens</div>
+                        <div class="specialty-desc">Fresh spinach, lettuce, and seasonal greens</div>
+                    </div>
+                    <div class="specialty-card">
+                        <div class="specialty-icon">🌶️</div>
+                        <div class="specialty-name">Peppers & Chilies</div>
+                        <div class="specialty-desc">Various varieties of peppers and chilies</div>
+                    </div>
+                    <div class="specialty-card">
+                        <div class="specialty-icon">🥕</div>
+                        <div class="specialty-name">Root Vegetables</div>
+                        <div class="specialty-desc">Carrots, radishes, and seasonal root veggies</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-section">
+                <h4>Banking & Payment Details</h4>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Account Holder</label>
+                        <div class="info-value">Ravi Kumar</div>
+                    </div>
+                    <div class="info-item">
+                        <label>Account Number</label>
+                        <div class="info-value">****-****-****-1234</div>
+                    </div>
+                    <div class="info-item">
+                        <label>IFSC Code</label>
+                        <div class="info-value">SBIN0001234</div>
+                    </div>
+                    <div class="info-item">
+                        <label>Bank Name</label>
+                        <div class="info-value">State Bank of India</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-section">
+                <h4>Performance Summary</h4>
+                <div class="performance-cards">
+                    <div class="performance-card">
+                        <div class="performance-title">Customer Satisfaction</div>
+                        <div class="performance-score">4.8/5.0</div>
+                        <div class="performance-detail">Based on 127 reviews</div>
+                    </div>
+                    <div class="performance-card">
+                        <div class="performance-title">Order Fulfillment</div>
+                        <div class="performance-score">98.5%</div>
+                        <div class="performance-detail">On-time delivery rate</div>
+                    </div>
+                    <div class="performance-card">
+                        <div class="performance-title">Product Quality</div>
+                        <div class="performance-score">4.9/5.0</div>
+                        <div class="performance-detail">Quality rating average</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-actions">
+            <button class="profile-action-btn primary" onclick="editFarmerProfile()">Edit Profile</button>
+            <button class="profile-action-btn secondary" onclick="downloadCertificate()">Download Certificate</button>
+            <button class="profile-action-btn secondary" onclick="shareProfile()">Share Profile</button>
+        </div>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
 <!-- CHOOSE -->
 <div class="choose-container" id="choose-container" style="display:none;">
     <div class="choose-bg">
-    <div class="choose-select">Select one</div>
-    <div class="choose-cards">
-        <div class="choose-card" onclick="chooseUser('family')">
-        <div class="choose-img" style="background-image:url('images/families.png');"></div>
-        <div class="choose-label">Families</div>
+        <div class="choose-select">Choose Your Role</div>
+        <p class="choose-subtitle">Join our community as a family looking for fresh produce or a farmer ready to sell directly to consumers.</p>
+        <div class="choose-cards">
+            <div class="choose-card" onclick="chooseUser('family')">
+                <div class="choose-img family-img"></div>
+                <div class="choose-label">Families</div>
+                <div class="choose-desc">Browse and order fresh produce from local farms</div>
+                <div class="choose-features">
+                    <span class="feature">🥬 Fresh Produce</span>
+                    <span class="feature">🚚 Home Delivery</span>
+                    <span class="feature">💰 Best Prices</span>
+                </div>
+            </div>
+            <div class="choose-card" onclick="chooseUser('farmer')">
+                <div class="choose-img farmer-img"></div>
+                <div class="choose-label">Farmers</div>
+                <div class="choose-desc">Sell your harvest directly to families in your area</div>
+                <div class="choose-features">
+                    <span class="feature">📊 Analytics Dashboard</span>
+                    <span class="feature">📦 Inventory Management</span>
+                    <span class="feature">💳 Secure Payments</span>
+                </div>
+            </div>
         </div>
-        <div class="choose-card" onclick="chooseUser('farmer')">
-        <div class="choose-img" style="background-image:url('images/farmers.png');"></div>
-        <div class="choose-label">Farmers</div>
-        </div>
-    </div>
     </div>
 </div>
 
 <!-- FAMILIES HOME -->
 <main class="home-container" id="home-families" style="display:none;">
     <header class="brand-home-bar">
-    <span class="home-brand">Farms to Families</span>
+        <div class="header-content">
+            <span class="home-brand">Farms to Families</span>
+            <div class="header-actions">
+                <button class="notification-btn" id="notification-btn">🔔</button>
+                <button class="profile-avatar" id="header-profile">👤</button>
+            </div>
+        </div>
     </header>
+    
     <nav class="top-navbar">
-    <a class="nav-link active" href="#" id="home-nav">Home</a>
-    <a class="nav-link" href="#" id="cart-nav">Cart</a>
-    <a class="nav-link" href="#">Favourite</a>
-    <a class="nav-link" href="#" id="profile-nav">Profile</a>
+        <a class="nav-link active" href="#" id="home-nav">
+            <span class="nav-icon">🏠</span>
+            Home
+        </a>
+        <a class="nav-link" href="#" id="cart-nav">
+            <span class="nav-icon">🛒</span>
+            Cart
+            <span class="cart-badge" id="cart-badge">3</span>
+        </a>
+        <a class="nav-link" href="#" id="favorites-nav">
+            <span class="nav-icon">❤️</span>
+            Favorites
+        </a>
+        <a class="nav-link" href="#" id="orders-nav">
+            <span class="nav-icon">📋</span>
+            Orders
+        </a>
+        <a class="nav-link" href="#" id="profile-nav">
+            <span class="nav-icon">👤</span>
+            Profile
+        </a>
     </nav>
     
     <section class="families-home-card" id="families-home-content">
-    <div class="location-bar">
-        <span class="location-emoji">🥕</span>
-        <span class="location-link">Bowrampet, Hyderabad</span>
-    </div>
-    
-    <div class="search-row">
-        <input type="text" class="search-bar" placeholder="Search Store" />
-    </div>
-    
-    <div class="banner-offer">
-        <span class="offer-sign">Special OFFER!</span>
-        <span class="offer-text">50% Off</span>
-        <span style="flex:1"></span>
-        <span style="font-size:0.95em;">T&amp;C Apply</span>
-    </div>
-    
-    <!-- Exclusive Offer -->
-    <section>
-        <h3>Exclusive Offer <span class="see-all">See all</span></h3>
-        <div class="product-list">
-        <div class="product-card">
-            <img src="images/bananas.png" alt="bananas" />
-            <div class="product-title">Organic Bananas <span class="small-g">7pcs</span></div>
-            <div class="product-price">&#8377; 60 <button class="product-add">+</button></div>
+        <div class="location-bar">
+            <span class="location-emoji">📍</span>
+            <div class="location-info">
+                <span class="location-link">Bowrampet, Hyderabad</span>
+                <span class="location-subtext">Delivering to your area</span>
+            </div>
+            <button class="change-location-btn">Change</button>
         </div>
-        <div class="product-card">
-            <img src="images/apple.png" alt="apple" />
-            <div class="product-title">Red Apple <span class="small-g">1kg</span></div>
-            <div class="product-price">&#8377; 600 <button class="product-add">+</button></div>
+        
+        <div class="search-row">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-bar" placeholder="Search for fresh vegetables, fruits..." />
+                <button class="filter-btn">🎛️</button>
+            </div>
         </div>
+        
+        <div class="banner-offer">
+            <div class="offer-content">
+                <span class="offer-sign">Special OFFER!</span>
+                <span class="offer-text">50% Off</span>
+                <span class="offer-subtext">On your first order above ₹500</span>
+            </div>
+            <button class="claim-offer-btn">Claim Now</button>
         </div>
+        
+        <!-- Categories -->
+        <section class="categories-section">
+            <h3>Shop by Category <span class="see-all">View All</span></h3>
+            <div class="categories-grid">
+                <div class="category-card" onclick="filterByCategory('vegetables')">
+                    <div class="category-icon">🥬</div>
+                    <div class="category-name">Vegetables</div>
+                    <div class="category-count">25+ items</div>
+                </div>
+                <div class="category-card" onclick="filterByCategory('fruits')">
+                    <div class="category-icon">🍎</div>
+                    <div class="category-name">Fruits</div>
+                    <div class="category-count">18+ items</div>
+                </div>
+                <div class="category-card" onclick="filterByCategory('grains')">
+                    <div class="category-icon">🌾</div>
+                    <div class="category-name">Grains</div>
+                    <div class="category-count">12+ items</div>
+                </div>
+                <div class="category-card" onclick="filterByCategory('dairy')">
+                    <div class="category-icon">🥛</div>
+                    <div class="category-name">Dairy</div>
+                    <div class="category-count">8+ items</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Exclusive Offer -->
+        <section>
+            <h3>Exclusive Offers <span class="see-all">See all</span></h3>
+            <div class="product-list">
+                <div class="product-card" onclick="viewProduct('bananas')">
+                    <div class="product-badge">50% OFF</div>
+                    <img src="images/bananas.png" alt="bananas" />
+                    <div class="product-rating">⭐ 4.5 (120 reviews)</div>
+                    <div class="product-title">Organic Bananas <span class="small-g">7pcs</span></div>
+                    <div class="product-price">₹ 60 <span class="original-price">₹120</span> <button class="product-add">+</button></div>
+                </div>
+                <div class="product-card" onclick="viewProduct('apple')">
+                    <div class="product-badge">Fresh</div>
+                    <img src="images/apple.png" alt="apple" />
+                    <div class="product-rating">⭐ 4.8 (89 reviews)</div>
+                    <div class="product-title">Red Apple <span class="small-g">1kg</span></div>
+                    <div class="product-price">₹ 600 <button class="product-add">+</button></div>
+                </div>
+                <div class="product-card" onclick="viewProduct('pomegranate')">
+                    <div class="product-badge">Premium</div>
+                    <img src="images/pomegranate.jpg" alt="pomegranate" />
+                    <div class="product-rating">⭐ 4.7 (95 reviews)</div>
+                    <div class="product-title">Fresh Pomegranate <span class="small-g">500g</span></div>
+                    <div class="product-price">₹ 200 <button class="product-add">+</button></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Best Selling -->
+        <section>
+            <h3>Best Selling <span class="see-all">See all</span></h3>
+            <div class="product-list">
+                <div class="product-card" onclick="viewProduct('capsicum')">
+                    <img src="images/capsicum.png" alt="capsicum" />
+                    <div class="product-rating">⭐ 4.6 (78 reviews)</div>
+                    <div class="product-title">Red Capsicum <span class="small-g">1kg</span></div>
+                    <div class="product-price">₹ 40 <button class="product-add">+</button></div>
+                </div>
+                <div class="product-card" onclick="viewProduct('ginger')">
+                    <img src="images/ginger.png" alt="ginger" />
+                    <div class="product-rating">⭐ 4.4 (56 reviews)</div>
+                    <div class="product-title">Fresh Ginger <span class="small-g">500g</span></div>
+                    <div class="product-price">₹ 60 <button class="product-add">+</button></div>
+                </div>
+                <div class="product-card" onclick="viewProduct('broccoli')">
+                    <img src="images/broccoli.png" alt="broccoli" />
+                    <div class="product-rating">⭐ 4.3 (42 reviews)</div>
+                    <div class="product-title">Organic Broccoli <span class="small-g">1kg</span></div>
+                    <div class="product-price">₹ 600 <button class="product-add">+</button></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Nearby Farms -->
+        <section>
+            <h3>Nearby Farms <span class="see-all">View all farms</span></h3>
+            <div class="farms-list">
+                <div class="farm-card" onclick="viewFarm('green-valley')">
+                    <div class="farm-image"></div>
+                    <div class="farm-info">
+                        <div class="farm-name">Green Valley Farm</div>
+                        <div class="farm-location">📍 2.5 km away</div>
+                        <div class="farm-rating">⭐ 4.9 (150+ reviews)</div>
+                        <div class="farm-speciality">Specializes in organic vegetables</div>
+                    </div>
+                    <button class="visit-farm-btn">Visit Farm</button>
+                </div>
+                <div class="farm-card" onclick="viewFarm('sunrise-organic')">
+                    <div class="farm-image"></div>
+                    <div class="farm-info">
+                        <div class="farm-name">Sunrise Organic</div>
+                        <div class="farm-location">📍 4.2 km away</div>
+                        <div class="farm-rating">⭐ 4.7 (98 reviews)</div>
+                        <div class="farm-speciality">Fresh fruits and seasonal produce</div>
+                    </div>
+                    <button class="visit-farm-btn">Visit Farm</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Groceries -->
+        <section>
+            <h3>Groceries & Essentials <span class="see-all">See all</span></h3>
+            <div class="groceries-grid">
+                <div class="groceries-card" onclick="browseCategory('grains')">
+                    <div class="groceries-img" style="background-image:url('images/grains.jpg');"></div>
+                    <div class="groceries-label">Grains</div>
+                    <div class="groceries-count">12 items</div>
+                </div>
+                <div class="groceries-card" onclick="browseCategory('pulses')">
+                    <div class="groceries-img" style="background-image:url('images/pulses.webp');"></div>
+                    <div class="groceries-label">Pulses</div>
+                    <div class="groceries-count">8 items</div>
+                </div>
+                <div class="groceries-card" onclick="browseCategory('rice')">
+                    <div class="groceries-img" style="background-image:url('images/rice.png');"></div>
+                    <div class="groceries-label">Rice</div>
+                    <div class="groceries-count">15 items</div>
+                </div>
+                <div class="groceries-card" onclick="browseCategory('oils')">
+                    <div class="groceries-img" style="background-image:url('images/oil.jpeg');"></div>
+                    <div class="groceries-label">Oils</div>
+                    <div class="groceries-count">6 items</div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Farms to Families</h4>
+                    <p>Connecting farmers directly with families for fresh, sustainable produce.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="#" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Farms to Families. All rights reserved.</p>
+            </div>
+        </footer>
     </section>
-    
-    <!-- Best Selling -->
-    <section>
-        <h3>Best Selling <span class="see-all">See all</span></h3>
-        <div class="product-list">
-        <div class="product-card">
-            <img src="images/capsicum.png" alt="capsicum" />
-            <div class="product-title">Red Capsicum <span class="small-g">1kg</span></div>
-            <div class="product-price">&#8377; 40 <button class="product-add">+</button></div>
+
+    <!-- CART SECTION -->
+    <section class="cart-card" id="cart-section" style="display:none;">
+        <div class="section-header">
+            <button class="back-btn" id="cart-back-btn">←</button>
+            <div class="section-title">Shopping Cart</div>
+            <button class="clear-cart-btn">Clear All</button>
         </div>
-        <div class="product-card">
-            <img src="images/ginger.png" alt="ginger" />
-            <div class="product-title">Ginger <span class="small-g">500g</span></div>
-            <div class="product-price">&#8377; 60 <button class="product-add">+</button></div>
+        
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="images/bananas.png" alt="bananas" class="cart-item-image">
+                <div class="cart-item-info">
+                    <div class="cart-item-name">Organic Bananas</div>
+                    <div class="cart-item-details">7pcs • Fresh from Green Valley Farm</div>
+                    <div class="cart-item-price">₹60</div>
+                </div>
+                <div class="cart-item-controls">
+                    <button class="qty-btn" onclick="updateQuantity('bananas', -1)">-</button>
+                    <span class="qty-display">2</span>
+                    <button class="qty-btn" onclick="updateQuantity('bananas', 1)">+</button>
+                </div>
+                <button class="remove-item-btn" onclick="removeFromCart('bananas')">🗑️</button>
+            </div>
+            
+            <div class="cart-item">
+                <img src="images/apple.png" alt="apple" class="cart-item-image">
+                <div class="cart-item-info">
+                    <div class="cart-item-name">Red Apple</div>
+                    <div class="cart-item-details">1kg • Premium quality</div>
+                    <div class="cart-item-price">₹600</div>
+                </div>
+                <div class="cart-item-controls">
+                    <button class="qty-btn" onclick="updateQuantity('apple', -1)">-</button>
+                    <span class="qty-display">1</span>
+                    <button class="qty-btn" onclick="updateQuantity('apple', 1)">+</button>
+                </div>
+                <button class="remove-item-btn" onclick="removeFromCart('apple')">🗑️</button>
+            </div>
         </div>
-        <div class="product-card">
-            <img src="images/broccoli.png" alt="broccoli" />
-            <div class="product-title">Broccoli <span class="small-g">1kg</span></div>
-            <div class="product-price">&#8377; 600 <button class="product-add">+</button></div>
+        
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal (3 items)</span>
+                <span>₹720</span>
+            </div>
+            <div class="summary-row">
+                <span>Delivery Fee</span>
+                <span class="delivery-fee">₹40</span>
+            </div>
+            <div class="summary-row">
+                <span>GST (18%)</span>
+                <span>₹130</span>
+            </div>
+            <div class="summary-row discount">
+                <span>First Order Discount</span>
+                <span>-₹50</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total Amount</span>
+                <span>₹840</span>
+            </div>
         </div>
+        
+        <div class="cart-actions">
+            <button class="continue-shopping-btn" onclick="continueShopping()">Continue Shopping</button>
+            <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
         </div>
-    </section>
-    
-    <!-- Groceries -->
-    <section>
-        <h3>Groceries <span class="see-all">See all</span></h3>
-        <div class="groceries-grid">
-        <div class="groceries-card placeholder-card">
-            <div class="groceries-img" style="background-image:url('images/grains.jpg');"></div>
-            <div class="groceries-label">Grains</div>
-        </div>
-        <div class="groceries-card placeholder-card">
-            <div class="groceries-img" style="background-image:url('images/pulses.webp');"></div>
-            <div class="groceries-label">Pulses</div>
-        </div>
-        <div class="groceries-card placeholder-card">
-            <div class="groceries-img" style="background-image:url('images/rice.png');"></div>
-            <div class="groceries-label">Rice</div>
-        </div>
-        <div class="groceries-card placeholder-card">
-            <div class="groceries-img" style="background-image:url('images/oil.jpeg');"></div>
-            <div class="groceries-label">Oils</div>
-        </div>
-        </div>
-    </section>
-    
-    <footer style="margin-top:32px; text-align:center; font-size:0.96rem; color:#6e826e;">© 2025 Farms to Families</footer>
     </section>
 
     <!-- CHECKOUT PAGE -->
     <section class="checkout-card" id="checkout-section" style="display:none;">
-    <button class="back-home" id="checkout-back-btn">&#8592;</button>
-    <div class="checkout-title">Checkout</div>
-    <div class="checkout-item-row">
-        <img src="images/pomegranate.jpg" alt="pomegranate" class="checkout-thumb">
-        <div class="checkout-item-info">
-        <div class="prod">Pomegranate</div>
-        <div class="checkout-price">&#8377;100</div>
-        <div><button class="qty-btn">-</button> <span>1</span> <button class="qty-btn">+</button></div>
-        <a class="checkout-link" href="#">Add more items</a>
+        <div class="section-header">
+            <button class="back-btn" id="checkout-back-btn">←</button>
+            <div class="section-title">Checkout</div>
         </div>
-    </div>
-    <button class="coupon-btn">Apply Coupon</button>
-    <div class="checkout-invoice">
-        <div><span>Original Price</span><span>&#8377;100</span></div>
-        <div><span>Delivery</span><span style="color:#f3756c;">+40</span></div>
-        <div><span>GST</span><span style="color:#f3756c;">+18</span></div>
-        <div><span>Discount</span><span style="color:#43ba7f;">-20</span></div>
-        <div style="font-weight:700;"><span>Total</span><span style="color:#28a340;">&#8377;138</span></div>
-    </div>
-    <div class="checkout-shipping">
-        <div style="font-weight:700;">Yaswanth Prasad <span class="ship-badge">Home &#9662;</span></div>
-        <div class="checkout-addr">Nizampet, Hyderabad</div>
-        <div class="checkout-ph">+91 12345 67890</div>
-        <button class="checkout-link">Add Delivery Instructions</button>
-    </div>
-    <button class="checkout-final-btn">Proceed to Checkout</button>
+        
+        <div class="checkout-steps">
+            <div class="step active">
+                <div class="step-number">1</div>
+                <div class="step-label">Address</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-label">Payment</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-label">Confirm</div>
+            </div>
+        </div>
+        
+        <div class="checkout-content">
+            <div class="delivery-address">
+                <h4>Delivery Address</h4>
+                <div class="address-card selected">
+                    <div class="address-header">
+                        <span class="address-type">Home</span>
+                        <span class="default-badge">Default</span>
+                    </div>
+                    <div class="address-name">Yaswanth Prasad</div>
+                    <div class="address-details">
+                        Nizampet, Hyderabad, Telangana - 502032<br>
+                        Phone: +91 12345 67890
+                    </div>
+                    <button class="edit-address-btn">Edit</button>
+                </div>
+                <button class="add-address-btn">+ Add New Address</button>
+            </div>
+            
+            <div class="delivery-time">
+                <h4>Delivery Time</h4>
+                <div class="time-slots">
+                    <div class="time-slot selected">
+                        <div class="slot-time">Today, 6-8 PM</div>
+                        <div class="slot-price">₹40</div>
+                    </div>
+                    <div class="time-slot">
+                        <div class="slot-time">Tomorrow, 9-11 AM</div>
+                        <div class="slot-price">Free</div>
+                    </div>
+                    <div class="time-slot">
+                        <div class="slot-time">Tomorrow, 6-8 PM</div>
+                        <div class="slot-price">₹20</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-summary">
+                <h4>Order Summary</h4>
+                <div class="checkout-items">
+                    <div class="checkout-item">
+                        <img src="images/bananas.png" alt="bananas" class="item-thumb">
+                        <div class="item-details">
+                            <div class="item-name">Organic Bananas</div>
+                            <div class="item-quantity">Qty: 2</div>
+                        </div>
+                        <div class="item-price">₹120</div>
+                    </div>
+                    <div class="checkout-item">
+                        <img src="images/apple.png" alt="apple" class="item-thumb">
+                        <div class="item-details">
+                            <div class="item-name">Red Apple</div>
+                            <div class="item-quantity">Qty: 1</div>
+                        </div>
+                        <div class="item-price">₹600</div>
+                    </div>
+                </div>
+                
+                <div class="bill-details">
+                    <div class="bill-row">
+                        <span>Item Total</span>
+                        <span>₹720</span>
+                    </div>
+                    <div class="bill-row">
+                        <span>Delivery Fee</span>
+                        <span>₹40</span>
+                    </div>
+                    <div class="bill-row">
+                        <span>GST</span>
+                        <span>₹137</span>
+                    </div>
+                    <div class="bill-row discount">
+                        <span>First Order Discount</span>
+                        <span>-₹50</span>
+                    </div>
+                    <div class="bill-row total">
+                        <span>Grand Total</span>
+                        <span>₹847</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="checkout-footer">
+            <div class="total-amount">₹847</div>
+            <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+        </div>
     </section>
 
     <!-- PROFILE SECTION -->
     <section class="profile-card" id="profile-section" style="display:none;">
-    <button class="back-home" id="profile-back-btn">&#8592;</button>
-    <div class="profile-title">Profile</div>
-    <form class="profile-form">
-        <label for="profile-name">Name</label>
-        <input type="text" id="profile-name" placeholder="Yaswanth Prasad">
-
-        <label for="profile-email">Email</label>
-        <input type="email" id="profile-email" placeholder="yaswanth@example.com">
-
-        <label for="profile-phone">Phone Number</label>
-        <input type="tel" id="profile-phone" placeholder="+91 12345 67890">
-
-        <label for="profile-address">Address</label>
-        <textarea id="profile-address" rows="3" placeholder="Nizampet, Hyderabad"></textarea>
-
-        <label for="profile-payment">Payment Method</label>
-        <select id="profile-payment">
-        <option value="card">Credit/Debit Card</option>
-        <option value="netbanking">Net Banking</option>
-        <option value="upi">UPI</option>
-        <option value="cash">Cash on Delivery</option>
-        </select>
-
-        <button type="submit" class="profile-save-btn">Save Changes</button>
-    </form>
+        <div class="section-header">
+            <button class="back-btn" id="profile-back-btn">←</button>
+            <div class="section-title">My Profile</div>
+        </div>
+        
+        <div class="profile-header">
+            <div class="profile-avatar-large">
+                <img src="https://via.placeholder.com/80x80/10b981/ffffff?text=YP" alt="Profile" class="avatar-img">
+                <button class="change-photo-btn">📷</button>
+            </div>
+            <div class="profile-info">
+                <div class="profile-name">Yaswanth Prasad</div>
+                <div class="profile-member">Member since Jan 2025</div>
+                <div class="profile-stats">
+                    <span class="stat">12 Orders</span>
+                    <span class="stat">₹3,450 Saved</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-menu">
+            <div class="menu-item" onclick="editProfile()">
+                <span class="menu-icon">👤</span>
+                <span class="menu-text">Edit Profile</span>
+                <span class="menu-arrow">→</span>
+            </div>
+            <div class="menu-item" onclick="viewAddresses()">
+                <span class="menu-icon">📍</span>
+                <span class="menu-text">Manage Addresses</span>
+                <span class="menu-arrow">→</span>
+            </div>
+            <div class="menu-item" onclick="viewOrders()">
+                <span class="menu-icon">📦</span>
+                <span class="menu-text">Order History</span>
+                <span class="menu-arrow">→</span>
+            </div>
+            <div class="menu-item" onclick="viewWallet()">
+                <span class="menu-icon">💳</span>
+                <span class="menu-text">Payment Methods</span>
+                <span class="menu-arrow">→</span>
+            </div>
+            <div class="menu-item" onclick="viewNotifications()">
+                <span class="menu-icon">🔔</span>
+                <span class="menu-text">Notifications</span>
+                <span class="menu-arrow">→</span>
+            </div>
+            <div class="menu-item" onclick="viewHelp()">
+                <span class="menu-icon">❓</span>
+                <span class="menu-text">Help & Support</span>
+                <span class="menu-arrow">→</span>
+            </div>
+            <div class="menu-item logout" onclick="logout()">
+                <span class="menu-icon">🚪</span>
+                <span class="menu-text">Logout</span>
+                <span class="menu-arrow">→</span>
+            </div>
+        </div>
     </section>
 </main>
 
 <!-- FARMERS HOME -->
 <main class="home-container" id="home-farmers" style="display:none;">
     <header class="brand-home-bar">
-    <span class="home-brand">Farms to Families - Farmer</span>
+        <div class="header-content">
+            <span class="home-brand">Farms to Families - Farmer Portal</span>
+            <div class="header-actions">
+                <button class="notification-btn" id="farmer-notification-btn">🔔</button>
+                <button class="profile-avatar" id="farmer-header-profile">👤</button>
+            </div>
+        </div>
     </header>
+    
     <nav class="top-navbar">
-    <a class="nav-link active" href="#" id="farmer-home-nav">Home</a>
-    <a class="nav-link" href="#" id="farmer-inventory-nav">Inventory</a>
-    <a class="nav-link" href="#" id="farmer-orders-nav">Orders</a>
-    <a class="nav-link" href="#" id="farmer-analytics-nav">Analytics</a>
-    <a class="nav-link" href="#" id="farmer-profile-nav">Profile</a>
+        <a class="nav-link active" href="#" id="farmer-home-nav">
+            <span class="nav-icon">🏠</span>
+            Home
+        </a>
+        <a class="nav-link" href="#" id="farmer-inventory-nav">
+            <span class="nav-icon">📦</span>
+            Inventory
+        </a>
+        <a class="nav-link" href="#" id="farmer-orders-nav">
+            <span class="nav-icon">📋</span>
+            Orders
+            <span class="orders-badge">5</span>
+        </a>
+        <a class="nav-link" href="#" id="farmer-analytics-nav">
+            <span class="nav-icon">📊</span>
+            Analytics
+        </a>
+        <a class="nav-link" href="#" id="farmer-tasks-nav">
+            <span class="nav-icon">✅</span>
+            Tasks
+        </a>
+        <a class="nav-link" href="#" id="farmer-profile-nav">
+            <span class="nav-icon">👤</span>
+            Profile
+        </a>
     </nav>
     
     <!-- FARMER HOME CONTENT -->
     <section class="farmer-home-card" id="farmer-home-content">
-    <div class="location-bar">
-        <span class="location-emoji">🚜</span>
-        <span class="location-link">My Farm - Bowrampet, Hyderabad</span>
-    </div>
-    
-    <div class="search-row">
-        <input type="text" class="search-bar" placeholder="Search Products" />
-    </div>
-    
-    <div class="banner-offer farmer-banner">
-        <span class="offer-sign">Farm Stats</span>
-        <span class="offer-text">Active Products: 15</span>
-        <span style="flex:1"></span>
-        <span style="font-size:0.95em;">Today's Revenue: ₹2,500</span>
-    </div>
+        <div class="location-bar">
+            <span class="location-emoji">🚜</span>
+            <div class="location-info">
+                <span class="location-link">Green Valley Farm - Bowrampet, Hyderabad</span>
+                <span class="location-subtext">Organic certified farm</span>
+            </div>
+            <button class="weather-btn">🌤️ 28°C</button>
+        </div>
+        
+        <div class="search-row">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-bar" placeholder="Search products, orders, customers..." />
+                <button class="filter-btn">🎛️</button>
+            </div>
+        </div>
+        
+        <div class="banner-offer farmer-banner">
+            <div class="offer-content">
+                <span class="offer-sign">Farm Dashboard</span>
+                <span class="offer-text">15 Active Products</span>
+                <span class="offer-subtext">Today's Revenue: ₹2,850</span>
+            </div>
+            <div class="quick-stats">
+                <div class="quick-stat">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">New Orders</div>
+                </div>
+                <div class="quick-stat">
+                    <div class="stat-number">₹12.5K</div>
+                    <div class="stat-label">This Week</div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Farm Statistics -->
-    <section>
-        <h3>Farm Overview <span class="see-all">View Details</span></h3>
-        <div class="farm-stats">
-        <div class="stat-card">
-            <div class="stat-icon">📊</div>
-            <div class="stat-title">Total Orders</div>
-            <div class="stat-value">142</div>
-            <div class="stat-change">+12% from last month</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-icon">💰</div>
-            <div class="stat-title">Monthly Revenue</div>
-            <div class="stat-value">₹45,600</div>
-            <div class="stat-change">+18% from last month</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-icon">📦</div>
-            <div class="stat-title">Products Listed</div>
-            <div class="stat-value">25</div>
-            <div class="stat-change">+3 new this week</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-icon">⭐</div>
-            <div class="stat-title">Customer Rating</div>
-            <div class="stat-value">4.8/5</div>
-            <div class="stat-change">+0.2 from last month</div>
-        </div>
-        </div>
-    </section>
-    
-    <!-- My Products -->
-    <section>
-        <h3>My Products <span class="see-all">Manage All</span></h3>
-        <div class="product-list">
-        <div class="product-card farmer-card" onclick="editProduct('bananas')">
-            <img src="images/bananas.png" alt="bananas" />
-            <div class="product-title">Organic Bananas <span class="small-g">Stock: 50kg</span></div>
-            <div class="product-price">₹60/kg <button class="product-edit">✏️</button></div>
-        </div>
-        <div class="product-card farmer-card" onclick="editProduct('apple')">
-            <img src="images/apple.png" alt="apple" />
-            <div class="product-title">Red Apple <span class="small-g">Stock: 30kg</span></div>
-            <div class="product-price">₹600/kg <button class="product-edit">✏️</button></div>
-        </div>
-        <div class="product-card farmer-card" onclick="editProduct('capsicum')">
-            <img src="images/capsicum.png" alt="capsicum" />
-            <div class="product-title">Red Capsicum <span class="small-g">Stock: 25kg</span></div>
-            <div class="product-price">₹40/kg <button class="product-edit">✏️</button></div>
-        </div>
-        </div>
-    </section>
-    
-    <!-- Recent Orders -->
-    <section>
-        <h3>Recent Orders <span class="see-all">View All</span></h3>
-        <div class="orders-list">
-        <div class="order-card" onclick="viewOrder('ORD001')">
-            <div class="order-info">
-            <div class="order-id">#ORD001</div>
-            <div class="order-customer">Rajesh Kumar</div>
-            <div class="order-items">3 items • ₹450</div>
+        <!-- Farm Statistics -->
+        <section>
+            <h3>Farm Overview <span class="see-all">View Details</span></h3>
+            <div class="farm-stats">
+                <div class="stat-card revenue-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-trend">+18%</div>
+                    </div>
+                    <div class="stat-title">Monthly Revenue</div>
+                    <div class="stat-value">₹45,600</div>
+                    <div class="stat-change">+₹6,800 from last month</div>
+                </div>
+                <div class="stat-card orders-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-trend">+12%</div>
+                    </div>
+                    <div class="stat-title">Total Orders</div>
+                    <div class="stat-value">142</div>
+                    <div class="stat-change">+15 from last month</div>
+                </div>
+                <div class="stat-card products-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">📦</div>
+                        <div class="stat-trend">+3</div>
+                    </div>
+                    <div class="stat-title">Products Listed</div>
+                    <div class="stat-value">25</div>
+                    <div class="stat-change">3 new this week</div>
+                </div>
+                <div class="stat-card rating-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-trend">+0.2</div>
+                    </div>
+                    <div class="stat-title">Customer Rating</div>
+                    <div class="stat-value">4.8/5</div>
+                    <div class="stat-change">Based on 127 reviews</div>
+                </div>
             </div>
-            <div class="order-status pending">Pending</div>
-        </div>
-        <div class="order-card" onclick="viewOrder('ORD002')">
-            <div class="order-info">
-            <div class="order-id">#ORD002</div>
-            <div class="order-customer">Priya Sharma</div>
-            <div class="order-items">2 items • ₹320</div>
+        </section>
+        
+        <!-- My Products -->
+        <section>
+            <h3>My Products <span class="see-all">Manage All</span></h3>
+            <div class="product-list">
+                <div class="product-card farmer-card" onclick="editProduct('bananas')">
+                    <div class="product-status active">Active</div>
+                    <img src="images/bananas.png" alt="bananas" />
+                    <div class="product-rating">⭐ 4.5 (120)</div>
+                    <div class="product-title">Organic Bananas <span class="small-g">Stock: 50kg</span></div>
+                    <div class="product-price">₹60/kg <button class="product-edit">✏️</button></div>
+                    <div class="product-sales">Sold: 25kg this week</div>
+                </div>
+                <div class="product-card farmer-card" onclick="editProduct('apple')">
+                    <div class="product-status low-stock">Low Stock</div>
+                    <img src="images/apple.png" alt="apple" />
+                    <div class="product-rating">⭐ 4.8 (89)</div>
+                    <div class="product-title">Red Apple <span class="small-g">Stock: 8kg</span></div>
+                    <div class="product-price">₹600/kg <button class="product-edit">✏️</button></div>
+                    <div class="product-sales">Sold: 12kg this week</div>
+                </div>
+                <div class="product-card farmer-card" onclick="editProduct('capsicum')">
+                    <div class="product-status active">Active</div>
+                    <img src="images/capsicum.png" alt="capsicum" />
+                    <div class="product-rating">⭐ 4.6 (78)</div>
+                    <div class="product-title">Red Capsicum <span class="small-g">Stock: 25kg</span></div>
+                    <div class="product-price">₹40/kg <button class="product-edit">✏️</button></div>
+                    <div class="product-sales">Sold: 18kg this week</div>
+                </div>
             </div>
-            <div class="order-status shipped">Shipped</div>
-        </div>
-        <div class="order-card" onclick="viewOrder('ORD003')">
-            <div class="order-info">
-            <div class="order-id">#ORD003</div>
-            <div class="order-customer">Amit Patel</div>
-            <div class="order-items">5 items • ₹780</div>
+        </section>
+        
+        <!-- Recent Orders -->
+        <section>
+            <h3>Recent Orders <span class="see-all">View All</span></h3>
+            <div class="orders-list">
+                <div class="order-card priority" onclick="viewOrder('ORD001')">
+                    <div class="order-header">
+                        <span class="order-id">#ORD001</span>
+                        <span class="order-time">2 min ago</span>
+                        <span class="order-status pending">New Order</span>
+                    </div>
+                    <div class="order-customer">
+                        <strong>Rajesh Kumar</strong>
+                        <span class="customer-location">📍 Nizampet, Hyderabad</span>
+                    </div>
+                    <div class="order-items">
+                        <span>Bananas (2kg), Capsicum (1kg)</span>
+                        <span class="order-total">₹450</span>
+                    </div>
+                    <div class="order-actions">
+                        <button class="action-btn accept" onclick="acceptOrder('ORD001')">Accept</button>
+                        <button class="action-btn decline" onclick="declineOrder('ORD001')">Decline</button>
+                    </div>
+                </div>
+                
+                <div class="order-card" onclick="viewOrder('ORD002')">
+                    <div class="order-header">
+                        <span class="order-id">#ORD002</span>
+                        <span class="order-time">1 hour ago</span>
+                        <span class="order-status confirmed">Confirmed</span>
+                    </div>
+                    <div class="order-customer">
+                        <strong>Priya Sharma</strong>
+                        <span class="customer-location">📍 Miyapur, Hyderabad</span>
+                    </div>
+                    <div class="order-items">
+                        <span>Apples (1kg), Pomegranate (500g)</span>
+                        <span class="order-total">₹800</span>
+                    </div>
+                    <div class="order-actions">
+                        <button class="action-btn prepare" onclick="prepareOrder('ORD002')">Mark Ready</button>
+                    </div>
+                </div>
+                
+                <div class="order-card" onclick="viewOrder('ORD003')">
+                    <div class="order-header">
+                        <span class="order-id">#ORD003</span>
+                        <span class="order-time">3 hours ago</span>
+                        <span class="order-status delivered">Delivered</span>
+                    </div>
+                    <div class="order-customer">
+                        <strong>Amit Patel</strong>
+                        <span class="customer-location">📍 Kondapur, Hyderabad</span>
+                    </div>
+                    <div class="order-items">
+                        <span>Mixed vegetables (3kg)</span>
+                        <span class="order-total">₹520</span>
+                    </div>
+                    <div class="order-rating">
+                        <span>Customer rated: ⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
             </div>
-            <div class="order-status delivered">Delivered</div>
-        </div>
-        </div>
-    </section>
-    
-    <!-- Quick Actions -->
-    <section>
-        <h3>Quick Actions</h3>
-        <div class="quick-actions">
-        <button class="action-btn" onclick="addNewProduct()">
-            <span class="action-icon">➕</span>
-            <span>Add Product</span>
-        </button>
-        <button class="action-btn" onclick="updateInventory()">
-            <span class="action-icon">📦</span>
-            <span>Update Stock</span>
-        </button>
-        <button class="action-btn" onclick="viewAnalytics()">
-            <span class="action-icon">📊</span>
-            <span>View Reports</span>
-        </button>
-        <button class="action-btn" onclick="manageOrders()">
-            <span class="action-icon">📋</span>
-            <span>Manage Orders</span>
-        </button>
-        </div>
-    </section>
-    
-    <footer style="margin-top:32px; text-align:center; font-size:0.96rem; color:#6e826e;">© 2025 Farms to Families - Farmer Portal</footer>
+        </section>
+        
+        <!-- Quick Actions -->
+        <section>
+            <h3>Quick Actions</h3>
+            <div class="quick-actions-grid">
+                <button class="action-card" onclick="addNewProduct()">
+                    <span class="action-icon">➕</span>
+                    <span class="action-title">Add Product</span>
+                    <span class="action-subtitle">List new produce</span>
+                </button>
+                <button class="action-card" onclick="updateInventory()">
+                    <span class="action-icon">📦</span>
+                    <span class="action-title">Update Stock</span>
+                    <span class="action-subtitle">Manage inventory</span>
+                </button>
+                <button class="action-card" onclick="viewAnalytics()">
+                    <span class="action-icon">📊</span>
+                    <span class="action-title">View Reports</span>
+                    <span class="action-subtitle">Sales analytics</span>
+                </button>
+                <button class="action-card" onclick="manageOrders()">
+                    <span class="action-icon">📋</span>
+                    <span class="action-title">Manage Orders</span>
+                    <span class="action-subtitle">Process orders</span>
+                </button>
+                <button class="action-card" onclick="farmTasks()">
+                    <span class="action-icon">🌱</span>
+                    <span class="action-title">Farm Tasks</span>
+                    <span class="action-subtitle">Daily activities</span>
+                </button>
+                <button class="action-card" onclick="customerSupport()">
+                    <span class="action-icon">💬</span>
+                    <span class="action-title">Customer Chat</span>
+                    <span class="action-subtitle">Support customers</span>
+                </button>
+            </div>
+        </section>
+        
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Farms to Families - Farmer Portal</h4>
+                    <p>Empowering farmers to connect directly with customers and grow their business.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#" class="footer-link">Farmer Guide</a>
+                    <a href="#" class="footer-link">Best Practices</a>
+                    <a href="#" class="footer-link">Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Farms to Families. All rights reserved.</p>
+            </div>
+        </footer>
     </section>
 
     <!-- FARMER INVENTORY SECTION -->
     <section class="farmer-inventory-card" id="farmer-inventory-content" style="display:none;">
-    <button class="back-home" id="inventory-back-btn">←</button>
-    <div class="section-title">Inventory Management</div>
-    
-    <div class="inventory-controls">
-        <button class="control-btn primary" onclick="addNewProduct()">Add New Product</button>
-        <button class="control-btn secondary" onclick="bulkUpdate()">Bulk Update</button>
-        <input type="text" class="search-bar" placeholder="Search inventory...">
-    </div>
-
-    <div class="inventory-grid">
-        <div class="inventory-item">
-        <img src="images/bananas.png" alt="bananas">
-        <div class="inventory-details">
-            <h4>Organic Bananas</h4>
-            <p>Stock: 50kg | Price: ₹60/kg</p>
-            <p>Status: <span class="status-active">Active</span></p>
-        </div>
-        <div class="inventory-actions">
-            <button class="btn-edit" onclick="editProduct('bananas')">Edit</button>
-            <button class="btn-stock" onclick="updateStock('bananas')">Update Stock</button>
-        </div>
+        <div class="section-header">
+            <button class="back-btn" id="inventory-back-btn">←</button>
+            <div class="section-title">Inventory Management</div>
+            <div class="header-actions">
+                <button class="export-btn">📊 Export</button>
+                <button class="sync-btn">🔄 Sync</button>
+            </div>
         </div>
         
-        <div class="inventory-item">
-        <img src="images/apple.png" alt="apple">
-        <div class="inventory-details">
-            <h4>Red Apple</h4>
-            <p>Stock: 30kg | Price: ₹600/kg</p>
-            <p>Status: <span class="status-low">Low Stock</span></p>
+        <div class="inventory-controls">
+            <button class="control-btn primary" onclick="addNewProduct()">+ Add New Product</button>
+            <button class="control-btn secondary" onclick="bulkUpdate()">Bulk Update</button>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search inventory...">
+                <button class="filter-btn">Filter</button>
+            </div>
         </div>
-        <div class="inventory-actions">
-            <button class="btn-edit" onclick="editProduct('apple')">Edit</button>
-            <button class="btn-stock" onclick="updateStock('apple')">Update Stock</button>
+
+        <div class="inventory-stats">
+            <div class="stat-item">
+                <div class="stat-label">Total Products</div>
+                <div class="stat-value">25</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Low Stock Items</div>
+                <div class="stat-value warning">3</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Out of Stock</div>
+                <div class="stat-value danger">1</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Total Value</div>
+                <div class="stat-value">₹45,600</div>
+            </div>
         </div>
+
+        <div class="inventory-table">
+            <div class="table-header">
+                <div class="table-row header">
+                    <div class="table-cell">Product</div>
+                    <div class="table-cell">Stock</div>
+                    <div class="table-cell">Price</div>
+                    <div class="table-cell">Status</div>
+                    <div class="table-cell">Sales</div>
+                    <div class="table-cell">Actions</div>
+                </div>
+            </div>
+            
+            <div class="table-body">
+                <div class="table-row">
+                    <div class="table-cell product-info">
+                        <img src="images/bananas.png" alt="bananas" class="product-thumbnail">
+                        <div>
+                            <div class="product-name">Organic Bananas</div>
+                            <div class="product-category">Fruits</div>
+                        </div>
+                    </div>
+                    <div class="table-cell stock-cell">
+                        <span class="stock-amount">50kg</span>
+                        <span class="stock-status healthy">Healthy</span>
+                    </div>
+                    <div class="table-cell">₹60/kg</div>
+                    <div class="table-cell">
+                        <span class="status-badge active">Active</span>
+                    </div>
+                    <div class="table-cell">25kg sold</div>
+                    <div class="table-cell actions-cell">
+                        <button class="action-btn-small edit" onclick="editProduct('bananas')">Edit</button>
+                        <button class="action-btn-small update" onclick="updateStock('bananas')">Update</button>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell product-info">
+                        <img src="images/apple.png" alt="apple" class="product-thumbnail">
+                        <div>
+                            <div class="product-name">Red Apple</div>
+                            <div class="product-category">Fruits</div>
+                        </div>
+                    </div>
+                    <div class="table-cell stock-cell">
+                        <span class="stock-amount">8kg</span>
+                        <span class="stock-status low">Low Stock</span>
+                    </div>
+                    <div class="table-cell">₹600/kg</div>
+                    <div class="table-cell">
+                        <span class="status-badge active">Active</span>
+                    </div>
+                    <div class="table-cell">12kg sold</div>
+                    <div class="table-cell actions-cell">
+                        <button class="action-btn-small edit" onclick="editProduct('apple')">Edit</button>
+                        <button class="action-btn-small restock urgent" onclick="restockProduct('apple')">Restock</button>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell product-info">
+                        <img src="images/capsicum.png" alt="capsicum" class="product-thumbnail">
+                        <div>
+                            <div class="product-name">Red Capsicum</div>
+                            <div class="product-category">Vegetables</div>
+                        </div>
+                    </div>
+                    <div class="table-cell stock-cell">
+                        <span class="stock-amount">25kg</span>
+                        <span class="stock-status healthy">Healthy</span>
+                    </div>
+                    <div class="table-cell">₹40/kg</div>
+                    <div class="table-cell">
+                        <span class="status-badge active">Active</span>
+                    </div>
+                    <div class="table-cell">18kg sold</div>
+                    <div class="table-cell actions-cell">
+                        <button class="action-btn-small edit" onclick="editProduct('capsicum')">Edit</button>
+                        <button class="action-btn-small update" onclick="updateStock('capsicum')">Update</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     </section>
 
     <!-- FARMER ORDERS SECTION -->
     <section class="farmer-orders-card" id="farmer-orders-content" style="display:none;">
-    <button class="back-home" id="orders-back-btn">←</button>
-    <div class="section-title">Order Management</div>
-    
-    <div class="orders-filter">
-        <button class="filter-btn active" onclick="filterOrders('all')">All Orders</button>
-        <button class="filter-btn" onclick="filterOrders('pending')">Pending</button>
-        <button class="filter-btn" onclick="filterOrders('shipped')">Shipped</button>
-        <button class="filter-btn" onclick="filterOrders('delivered')">Delivered</button>
-    </div>
+        <div class="section-header">
+            <button class="back-btn" id="orders-back-btn">←</button>
+            <div class="section-title">Order Management</div>
+            <div class="header-actions">
+                <button class="export-btn">📊 Export</button>
+                <button class="notification-settings-btn">🔔</button>
+            </div>
+        </div>
+        
+        <div class="orders-filter">
+            <button class="filter-btn active" onclick="filterOrders('all')">All Orders (12)</button>
+            <button class="filter-btn pending" onclick="filterOrders('pending')">New (5)</button>
+            <button class="filter-btn processing" onclick="filterOrders('confirmed')">Confirmed (4)</button>
+            <button class="filter-btn shipped" onclick="filterOrders('ready')">Ready (2)</button>
+            <button class="filter-btn delivered" onclick="filterOrders('delivered')">Delivered (1)</button>
+        </div>
 
-    <div class="detailed-orders">
-        <div class="detailed-order-card">
-        <div class="order-header">
-            <span class="order-number">#ORD001</span>
-            <span class="order-date">Today, 2:30 PM</span>
-            <span class="order-status pending">Pending</span>
+        <div class="orders-summary">
+            <div class="summary-card">
+                <div class="summary-title">Today's Orders</div>
+                <div class="summary-value">5 orders</div>
+                <div class="summary-amount">₹2,150</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-title">Pending Actions</div>
+                <div class="summary-value">3 orders</div>
+                <div class="summary-subtitle">Need your attention</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-title">This Week</div>
+                <div class="summary-value">28 orders</div>
+                <div class="summary-amount">₹12,480</div>
+            </div>
         </div>
-        <div class="order-customer-info">
-            <strong>Rajesh Kumar</strong><br>
-            📱 +91 98765 43210<br>
-            📍 Nizampet, Hyderabad
+
+        <div class="detailed-orders">
+            <div class="detailed-order-card urgent">
+                <div class="order-priority-badge">Urgent</div>
+                <div class="order-header">
+                    <div class="order-info">
+                        <span class="order-number">#ORD001</span>
+                        <span class="order-date">Today, 2:30 PM</span>
+                    </div>
+                    <span class="order-status pending">New Order</span>
+                </div>
+                <div class="order-customer-info">
+                    <div class="customer-header">
+                        <strong>Rajesh Kumar</strong>
+                        <span class="customer-type">Premium Customer</span>
+                    </div>
+                    <div class="customer-details">
+                        📱 +91 98765 43210<br>
+                        📍 Nizampet, Hyderabad (2.5 km away)<br>
+                        🕒 Delivery requested: Today 6-8 PM
+                    </div>
+                </div>
+                <div class="order-items-list">
+                    <div class="order-item">
+                        <img src="images/bananas.png" alt="bananas" class="item-image">
+                        <div class="item-info">
+                            <div class="item-name">Organic Bananas</div>
+                            <div class="item-details">2kg × ₹60 = ₹120</div>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="images/capsicum.png" alt="capsicum" class="item-image">
+                        <div class="item-info">
+                            <div class="item-name">Red Capsicum</div>
+                            <div class="item-details">1kg × ₹40 = ₹40</div>
+                        </div>
+                    </div>
+                    <div class="order-total">
+                        <div class="total-breakdown">
+                            <div>Subtotal: ₹160</div>
+                            <div>Delivery: ₹40</div>
+                            <div>GST: ₹36</div>
+                            <div class="total-amount">Total: ₹236</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-actions-detailed">
+                    <button class="btn-accept primary" onclick="acceptOrder('ORD001')">Accept Order</button>
+                    <button class="btn-negotiate" onclick="negotiateOrder('ORD001')">Negotiate</button>
+                    <button class="btn-decline" onclick="declineOrder('ORD001')">Decline</button>
+                </div>
+                <div class="order-timer">
+                    <span class="timer-text">⏰ Auto-decline in: <strong>15:30</strong></span>
+                </div>
+            </div>
+            
+            <div class="detailed-order-card">
+                <div class="order-header">
+                    <div class="order-info">
+                        <span class="order-number">#ORD002</span>
+                        <span class="order-date">Today, 1:15 PM</span>
+                    </div>
+                    <span class="order-status confirmed">Confirmed</span>
+                </div>
+                <div class="order-customer-info">
+                    <div class="customer-header">
+                        <strong>Priya Sharma</strong>
+                        <span class="customer-rating">⭐ 4.8</span>
+                    </div>
+                    <div class="customer-details">
+                        📱 +91 87654 32109<br>
+                        📍 Miyapur, Hyderabad (4.2 km away)<br>
+                        🕒 Delivery: Tomorrow 9-11 AM
+                    </div>
+                </div>
+                <div class="order-items-list">
+                    <div class="order-item">
+                        <img src="images/apple.png" alt="apple" class="item-image">
+                        <div class="item-info">
+                            <div class="item-name">Red Apple</div>
+                            <div class="item-details">1kg × ₹600 = ₹600</div>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="images/pomegranate.jpg" alt="pomegranate" class="item-image">
+                        <div class="item-info">
+                            <div class="item-name">Pomegranate</div>
+                            <div class="item-details">500g × ₹200 = ₹100</div>
+                        </div>
+                    </div>
+                    <div class="order-total">
+                        <div class="total-amount">Total: ₹800</div>
+                    </div>
+                </div>
+                <div class="order-actions-detailed">
+                    <button class="btn-prepare primary" onclick="markReady('ORD002')">Mark as Ready</button>
+                    <button class="btn-message" onclick="messageCustomer('ORD002')">Message Customer</button>
+                    <button class="btn-track" onclick="trackOrder('ORD002')">Track Delivery</button>
+                </div>
+            </div>
         </div>
-        <div class="order-items-list">
-            <div class="order-item">Bananas - 2kg × ₹60 = ₹120</div>
-            <div class="order-item">Capsicum - 1kg × ₹40 = ₹40</div>
-            <div class="order-total">Total: ₹450 (including delivery)</div>
-        </div>
-        <div class="order-actions-btn">
-            <button class="btn-accept" onclick="acceptOrder('ORD001')">Accept Order</button>
-            <button class="btn-reject" onclick="rejectOrder('ORD001')">Decline</button>
-        </div>
-        </div>
-    </div>
     </section>
 
     <!-- FARMER ANALYTICS SECTION -->
     <section class="farmer-analytics-card" id="farmer-analytics-content" style="display:none;">
-    <button class="back-home" id="analytics-back-btn">←</button>
-    <div class="section-title">Analytics & Reports</div>
-    
-    <div class="analytics-period">
-        <button class="period-btn active" onclick="setPeriod('week')">This Week</button>
-        <button class="period-btn" onclick="setPeriod('month')">This Month</button>
-        <button class="period-btn" onclick="setPeriod('year')">This Year</button>
-    </div>
+        <div class="section-header">
+            <button class="back-btn" id="analytics-back-btn">←</button>
+            <div class="section-title">Analytics & Reports</div>
+            <div class="header-actions">
+                <button class="export-btn">📊 Export Data</button>
+                <button class="share-btn">📤 Share Report</button>
+            </div>
+        </div>
+        
+        <div class="analytics-period">
+            <button class="period-btn active" onclick="setPeriod('week')">This Week</button>
+            <button class="period-btn" onclick="setPeriod('month')">This Month</button>
+            <button class="period-btn" onclick="setPeriod('quarter')">Quarter</button>
+            <button class="period-btn" onclick="setPeriod('year')">This Year</button>
+            <input type="date" class="custom-date" placeholder="Custom Range">
+        </div>
 
-    <div class="analytics-grid">
-        <div class="analytics-card">
-        <h4>Revenue Trend</h4>
-        <div class="chart-placeholder">
-            📈 Revenue: ₹45,600 (+18%)
+        <div class="analytics-overview">
+            <div class="overview-card revenue">
+                <div class="overview-icon">💰</div>
+                <div class="overview-content">
+                    <div class="overview-title">Total Revenue</div>
+                    <div class="overview-amount">₹45,600</div>
+                    <div class="overview-change positive">+18% from last period</div>
+                </div>
+            </div>
+            <div class="overview-card orders">
+                <div class="overview-icon">📦</div>
+                <div class="overview-content">
+                    <div class="overview-title">Orders Completed</div>
+                    <div class="overview-amount">142</div>
+                    <div class="overview-change positive">+12% from last period</div>
+                </div>
+            </div>
+            <div class="overview-card customers">
+                <div class="overview-icon">👥</div>
+                <div class="overview-content">
+                    <div class="overview-title">Active Customers</div>
+                    <div class="overview-amount">89</div>
+                    <div class="overview-change positive">+8 new customers</div>
+                </div>
+            </div>
+            <div class="overview-card rating">
+                <div class="overview-icon">⭐</div>
+                <div class="overview-content">
+                    <div class="overview-title">Average Rating</div>
+                    <div class="overview-amount">4.8/5</div>
+                    <div class="overview-change positive">+0.2 improvement</div>
+                </div>
+            </div>
         </div>
+
+        <div class="analytics-grid">
+            <div class="analytics-card chart-card">
+                <h4>Revenue Trends</h4>
+                <div class="chart-container">
+                    <div class="chart-placeholder">
+                        <div class="chart-bars">
+                            <div class="bar" style="height: 60%;" data-value="₹12,000"></div>
+                            <div class="bar" style="height: 80%;" data-value="₹16,000"></div>
+                            <div class="bar" style="height: 45%;" data-value="₹9,000"></div>
+                            <div class="bar active" style="height: 90%;" data-value="₹18,000"></div>
+                            <div class="bar" style="height: 70%;" data-value="₹14,000"></div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>Week 1</span>
+                            <span>Week 2</span>
+                            <span>Week 3</span>
+                            <span>Week 4</span>
+                            <span>Week 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="analytics-card">
+                <h4>Top Performing Products</h4>
+                <div class="top-products-list">
+                    <div class="top-product">
+                        <div class="product-rank">1</div>
+                        <img src="images/bananas.png" alt="bananas" class="product-thumb">
+                        <div class="product-details">
+                            <div class="product-name">Organic Bananas</div>
+                            <div class="product-revenue">₹12,000 revenue</div>
+                        </div>
+                        <div class="product-trend up">+25%</div>
+                    </div>
+                    <div class="top-product">
+                        <div class="product-rank">2</div>
+                        <img src="images/apple.png" alt="apple" class="product-thumb">
+                        <div class="product-details">
+                            <div class="product-name">Red Apple</div>
+                            <div class="product-revenue">₹9,800 revenue</div>
+                        </div>
+                        <div class="product-trend up">+18%</div>
+                    </div>
+                    <div class="top-product">
+                        <div class="product-rank">3</div>
+                        <img src="images/capsicum.png" alt="capsicum" class="product-thumb">
+                        <div class="product-details">
+                            <div class="product-name">Red Capsicum</div>
+                            <div class="product-revenue">₹7,500 revenue</div>
+                        </div>
+                        <div class="product-trend down">-5%</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="analytics-card">
+                <h4>Customer Insights</h4>
+                <div class="customer-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Repeat Customers</div>
+                        <div class="metric-value">78%</div>
+                        <div class="metric-bar">
+                            <div class="metric-fill" style="width: 78%;"></div>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Customer Satisfaction</div>
+                        <div class="metric-value">4.8/5</div>
+                        <div class="metric-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Average Order Value</div>
+                        <div class="metric-value">₹485</div>
+                        <div class="metric-change">+₹45 vs last month</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="analytics-card">
+                <h4>Delivery Performance</h4>
+                <div class="delivery-stats">
+                    <div class="delivery-stat">
+                        <div class="stat-circle on-time">
+                            <span>94%</span>
+                        </div>
+                        <div class="stat-label">On-Time Delivery</div>
+                    </div>
+                    <div class="delivery-stat">
+                        <div class="stat-circle quality">
+                            <span>4.9</span>
+                        </div>
+                        <div class="stat-label">Quality Rating</div>
+                    </div>
+                    <div class="delivery-stat">
+                        <div class="stat-circle distance">
+                            <span>3.2km</span>
+                        </div>
+                        <div class="stat-label">Avg Distance</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="analytics-card">
-        <h4>Top Products</h4>
-        <div class="top-products">
-            <div class="top-product">1. Bananas - ₹12,000</div>
-            <div class="top-product">2. Apples - ₹9,800</div>
-            <div class="top-product">3. Capsicum - ₹7,500</div>
-        </div>
-        </div>
-        
-        <div class="analytics-card">
-        <h4>Customer Satisfaction</h4>
-        <div class="satisfaction-score">
-            <div class="score">4.8/5</div>
-            <div class="reviews">Based on 127 reviews</div>
-        </div>
-        </div>
-    </div>
     </section>
 
-    <!-- FARMER PROFILE SECTION -->
-    <section class="farmer-profile-card" id="farmer-profile-content" style="display:none;">
-    <button class="back-home" id="farmer-profile-back-btn">←</button>
-    <div class="section-title">Farmer Profile</div>
-    
-    <form class="farmer-profile-form">
-        <div class="form-section">
-        <h4>Personal Information</h4>
-        <label for="farmer-name">Farm Name</label>
-        <input type="text" id="farmer-name" placeholder="Green Valley Farm">
-        
-        <label for="farmer-owner">Owner Name</label>
-        <input type="text" id="farmer-owner" placeholder="Ravi Kumar">
-        
-        <label for="farmer-email">Email</label>
-        <input type="email" id="farmer-email" placeholder="ravi@greenvalley.com">
-        
-        <label for="farmer-phone">Phone</label>
-        <input type="tel" id="farmer-phone" placeholder="+91 98765 43210">
-        </div>
-        
-        <div class="form-section">
-        <h4>Farm Details</h4>
-        <label for="farm-address">Farm Address</label>
-        <textarea id="farm-address" rows="3" placeholder="Village Bowrampet, Hyderabad"></textarea>
-        
-        <label for="farm-size">Farm Size</label>
-        <input type="text" id="farm-size" placeholder="5 acres">
-        
-        <label for="farm-type">Farm Type</label>
-        <select id="farm-type">
-            <option value="organic">Organic</option>
-            <option value="conventional">Conventional</option>
-            <option value="mixed">Mixed</option>
-        </select>
-        </div>
-        
-        <div class="form-section">
-        <h4>Banking Details</h4>
-        <label for="bank-account">Account Number</label>
-        <input type="text" id="bank-account" placeholder="XXXX-XXXX-XXXX-1234">
-        
-        <label for="bank-ifsc">IFSC Code</label>
-        <input type="text" id="bank-ifsc" placeholder="SBIN0001234">
-        </div>
-        
-        <button type="submit" class="profile-save-btn">Save Profile</button>
-    </form>
-    </section>
-</main>
+   </script>
 
-<script src="app.js"></script>
 </body>
 </html>
