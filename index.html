@@ -717,33 +717,121 @@
         </div>
     </header>
     
-    <nav class="top-navbar">
-        <a class="nav-link active" href="#" id="farmer-home-nav">
-            <span class="nav-icon">🏠</span>
-            Home
-        </a>
-        <a class="nav-link" href="#" id="farmer-inventory-nav">
-            <span class="nav-icon">📦</span>
-            Inventory
-        </a>
-        <a class="nav-link" href="#" id="farmer-orders-nav">
-            <span class="nav-icon">📋</span>
-            Orders
-            <span class="orders-badge">5</span>
-        </a>
-        <a class="nav-link" href="#" id="farmer-analytics-nav">
-            <span class="nav-icon">📊</span>
-            Analytics
-        </a>
-        <a class="nav-link" href="#" id="farmer-tasks-nav">
-            <span class="nav-icon">✅</span>
-            Tasks
-        </a>
-        <a class="nav-link" href="#" id="farmer-profile-nav">
-            <span class="nav-icon">👤</span>
-            Profile
-        </a>
-    </nav>
+ <nav class="top-navbar">
+    <a class="nav-link active" href="#" id="farmer-home-nav">
+        <span class="nav-icon">🏠</span>
+        Home
+    </a>
+    <a class="nav-link" href="#" id="farmer-inventory-nav">
+        <span class="nav-icon">📦</span>
+        Inventory
+    </a>
+    <a class="nav-link" href="#" id="farmer-orders-nav">
+        <span class="nav-icon">📋</span>
+        Orders
+        <span class="orders-badge">5</span>
+    </a>
+    <a class="nav-link" href="#" id="farmer-analytics-nav">
+        <span class="nav-icon">📊</span>
+        Analytics
+    </a>
+    <!-- AI Tab (farmer only) -->
+    <a class="nav-link" href="#" id="farmer-ai-nav">
+        <span class="nav-icon">✨</span>
+        AI
+    </a>
+    <a class="nav-link" href="#" id="farmer-profile-nav">
+        <span class="nav-icon">👤</span>
+        Profile
+    </a>
+</nav>
+<!-- AI Recommendation Page for Farmers (as a main section, hidden by default) -->
+<section class="ai-recommendation-card" id="ai-recommendation-content" style="display:none;">
+  <div class="ai-modern-header">
+    <div>
+      <h2>AI Field Assistant</h2>
+      <div class="ai-weather-large">
+        <span class="ai-weather-icon">🌤️</span>
+        <span class="ai-weather-temp">24°C, Partly Sunny</span>
+        <span class="ai-weather-meta">Humidity: 77% · Rain: &lt;0.01in · Wind: 6 mph</span>
+      </div>
+    </div>
+    <div class="ai-summary-card">
+      <strong>Latest AI Suggestion:</strong>
+      <div class="ai-suggestion-text">Irrigate Lettuce Field — soil moisture detected low</div>
+    </div>
+  </div>
+
+  <div class="ai-fields-gallery">
+    <div class="ai-field-card big">
+      <img src="images/field-tomatoes.jpeg" alt="Tomatoes Field" />
+      <div class="ai-field-labels">
+        <div class="ai-label-good">Tomatoes</div>
+        <div class="ai-label-meta">1.2 Ha • Good condition</div>
+      </div>
+    </div>
+    <div class="ai-field-card big">
+      <img src="images/field-lettuce.jpg" alt="Lettuce Field" />
+      <div class="ai-field-labels">
+        <div class="ai-label-warning">Lettuce</div>
+        <div class="ai-label-meta">1.6 Ha • Needs Water</div>
+      </div>
+    </div>
+    <div class="ai-field-card big">
+      <img src="images/field-rice.jpg" alt="Rice Field" />
+      <div class="ai-field-labels">
+        <div class="ai-label-good">Rice</div>
+        <div class="ai-label-meta">2.6 Ha • Good</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ai-tasks-block">
+    <h3>Today's Tasks</h3>
+    <div class="ai-task-card good">
+      <span class="ai-task-status">✔️</span>
+      <div>
+        <div class="ai-task-title">Watering <b>Tomatoes Field</b></div>
+        <div class="ai-task-meta">10:10 AM • Deep and regular watering</div>
+      </div>
+    </div>
+    <div class="ai-task-card warning">
+      <span class="ai-task-status">⬜</span>
+      <div>
+        <div class="ai-task-title">Weeding <b>Lettuce Field</b></div>
+        <div class="ai-task-meta">11:30 AM • Remove visible weeds</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating AI Chatbot Widget -->
+  <div class="ai-chatbot-widget" id="ai-chatbot">
+    <div class="ai-chatbot-toggle" onclick="document.getElementById('ai-chatbot').classList.toggle('open')">🤖</div>
+    <div class="ai-chatbot-panel">
+      <div class="ai-chat-header">
+        <span>AI Chatbot</span>
+        <button onclick="document.getElementById('ai-chatbot').classList.remove('open')" title="Close">×</button>
+      </div>
+      <div class="ai-chat-log">
+        <div class="ai-chat-message user">Please help me to re-managed my task based on latest monitoring data</div>
+        <div class="ai-chat-message bot">
+          <b>Of course! Here are your new tasks:</b>
+          <ul>
+            <li><b>10:00</b> Water your tomato plants deeply and regularly. Aim to keep the soil consistently moist, but not soggy.</li>
+            <li><b>11:00</b> Apply mulch around plants to retain soil.</li>
+            <li><b>12:00</b> Apply mulch around the base of the plants to retain moisture.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ai-chat-inputbar">
+        <input type="text" placeholder="Ask AI assistant..." />
+        <button>➡️</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     
     <!-- FARMER HOME CONTENT -->
     <section class="farmer-home-card" id="farmer-home-content">
@@ -781,6 +869,7 @@
                 </div>
             </div>
         </div>
+        
 
         <!-- Farm Statistics -->
         <section>
@@ -824,7 +913,6 @@
                 </div>
             </div>
         </section>
-        
         <!-- My Products -->
         <section>
             <h3>My Products <span class="see-all">Manage All</span></h3>
