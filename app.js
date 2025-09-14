@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const farmerOrdersContent = document.getElementById('farmer-orders-content');
   const farmerAnalyticsContent = document.getElementById('farmer-analytics-content');
   const farmerProfileContent = document.getElementById('farmer-profile-content');
+  const farmerAIContent = document.getElementById('ai-recommendation-content');
 
   // Farmer navigation
   const farmerHomeNav = document.getElementById('farmer-home-nav');
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const farmerOrdersNav = document.getElementById('farmer-orders-nav');
   const farmerAnalyticsNav = document.getElementById('farmer-analytics-nav');
   const farmerProfileNav = document.getElementById('farmer-profile-nav');
+  const farmerAINav = document.getElementById('farmer-ai-nav');
 
   // Farmer back buttons
   const inventoryBackBtn = document.getElementById('inventory-back-btn');
@@ -132,12 +134,21 @@ document.addEventListener("DOMContentLoaded", function () {
     farmerProfileNav.classList.add('active');
   }
 
+  // New function to show AI tab content
+  function showFarmerAI() {
+    hideAllFarmerSections();
+    farmerAIContent.style.display = "block";
+    clearFarmerActiveNav();
+    farmerAINav.classList.add('active');
+  }
+
   function hideAllFarmerSections() {
     farmerHomeContent.style.display = "none";
     farmerInventoryContent.style.display = "none";
     farmerOrdersContent.style.display = "none";
     farmerAnalyticsContent.style.display = "none";
     farmerProfileContent.style.display = "none";
+    farmerAIContent.style.display = "none"; // Hide AI content as well
   }
 
   function clearFarmerActiveNav() {
@@ -146,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
     farmerOrdersNav.classList.remove('active');
     farmerAnalyticsNav.classList.remove('active');
     farmerProfileNav.classList.remove('active');
+    farmerAINav.classList.remove('active'); // Remove active from AI nav
   }
 
   // FAMILY EVENT LISTENERS
@@ -220,6 +232,14 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   }
 
+  // AI nav listener
+  if (farmerAINav) {
+    farmerAINav.onclick = function(e) {
+      e.preventDefault();
+      showFarmerAI();
+    };
+  }
+
   // Farmer back button event listeners
   if (inventoryBackBtn) {
     inventoryBackBtn.onclick = function(e) {
@@ -250,8 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // FARMER SPECIFIC FUNCTIONS (Global functions for onclick handlers)
-
-  // Product management
+  // ... (retain your existing window functions for product and order management, etc.)
   window.editProduct = function(productId) {
     alert(`Editing product: ${productId}\nThis would open a product edit form.`);
     console.log(`Edit product: ${productId}`);
@@ -270,7 +289,6 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log('Add new product clicked');
   };
 
-  // Order management
   window.viewOrder = function(orderId) {
     alert(`Viewing order details for: ${orderId}\nThis would show full order information.`);
     console.log(`View order: ${orderId}`);
@@ -280,7 +298,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (confirm(`Accept order ${orderId}?`)) {
       alert(`Order ${orderId} has been accepted!`);
       console.log(`Order accepted: ${orderId}`);
-      // Update UI to show accepted status
     }
   };
 
@@ -292,42 +309,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  window.filterOrders = function(status) {
-    // Update active filter button
+window.filterOrders = function(event, status) {
     const filterBtns = document.querySelectorAll('.filter-btn');
     filterBtns.forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
-    
+
     alert(`Filtering orders by: ${status}`);
     console.log(`Filter orders: ${status}`);
-  };
+};
 
-  // Inventory management
-  window.bulkUpdate = function() {
-    alert('Opening bulk inventory update...\nThis would allow updating multiple products at once.');
-    console.log('Bulk update clicked');
-  };
-
-  window.updateInventory = function() {
-    showFarmerInventory();
-  };
-
-  // Analytics
-  window.viewAnalytics = function() {
-    showFarmerAnalytics();
-  };
-
-  window.setPeriod = function(period) {
-    // Update active period button
+window.setPeriod = function(event, period) {
     const periodBtns = document.querySelectorAll('.period-btn');
     periodBtns.forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
-    
+
     alert(`Analytics period set to: ${period}`);
     console.log(`Analytics period: ${period}`);
-  };
+};
 
-  // Quick actions
+
   window.manageOrders = function() {
     showFarmerOrders();
   };
@@ -360,7 +360,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Add hover effects and interactive features
+  // Add hover effects for interactive cards
   document.addEventListener('mouseover', function(e) {
     if (e.target.classList.contains('product-card') || 
         e.target.classList.contains('groceries-card') || 
@@ -369,7 +369,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Initialize with some sample data logging
+  // Initialization logs
   console.log('Farms to Families app initialized');
   console.log('Available user types: Family, Farmer');
 });
